@@ -1,0 +1,968 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SetLightCommand.PayloadData
+   | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SetLightCommand.PayloadData
+   | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData">
+  
+  
+  <h1 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData" class="text-break">Class SetLightCommand.PayloadData
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="XFS4IoT.MessagePayloadBase.html">MessagePayloadBase</a></div>
+    <div class="level2"><a class="xref" href="XFS4IoT.Commands.MessagePayload.html">MessagePayload</a></div>
+    <div class="level3"><span class="xref">SetLightCommand.PayloadData</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoT.Commands.MessagePayload.html#XFS4IoT_Commands_MessagePayload_Timeout">MessagePayload.Timeout</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoT.Lights.Commands.html">XFS4IoT.Lights.Commands</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Core.dll</h6>
+  <h5 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+public sealed class PayloadData : MessagePayload</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData__ctor_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.#ctor*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData__ctor_System_Int32_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_XFS4IoT_Lights_LightStateClass_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.#ctor(System.Int32,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass,XFS4IoT.Lights.LightStateClass)">PayloadData(Int32, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass, LightStateClass)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PayloadData(int Timeout, LightStateClass CardReader = null, LightStateClass PinPad = null, LightStateClass NotesDispenser = null, LightStateClass CoinDispenser = null, LightStateClass ReceiptPrinter = null, LightStateClass PassbookPrinter = null, LightStateClass EnvelopeDepository = null, LightStateClass BillAcceptor = null, LightStateClass EnvelopeDispenser = null, LightStateClass DocumentPrinter = null, LightStateClass CoinAcceptor = null, LightStateClass Scanner = null, LightStateClass Contactless = null, LightStateClass CardReader2 = null, LightStateClass NotesDispenser2 = null, LightStateClass BillAcceptor2 = null, LightStateClass StatusGood = null, LightStateClass StatusWarning = null, LightStateClass StatusBad = null, LightStateClass StatusSupervisor = null, LightStateClass StatusInService = null, LightStateClass FasciaLight = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Timeout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">CardReader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">PinPad</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">NotesDispenser</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">CoinDispenser</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">ReceiptPrinter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">PassbookPrinter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">EnvelopeDepository</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">BillAcceptor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">EnvelopeDispenser</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">DocumentPrinter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">CoinAcceptor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">Scanner</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">Contactless</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">CardReader2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">NotesDispenser2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">BillAcceptor2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">StatusGood</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">StatusWarning</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">StatusBad</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">StatusSupervisor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">StatusInService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td><span class="parametername">FasciaLight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_BillAcceptor_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.BillAcceptor*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_BillAcceptor" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.BillAcceptor">BillAcceptor</h4>
+  <div class="markdown level1 summary"><p>Bill Acceptor Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;billAcceptor&quot;)]
+public LightStateClass BillAcceptor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_BillAcceptor2_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.BillAcceptor2*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_BillAcceptor2" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.BillAcceptor2">BillAcceptor2</h4>
+  <div class="markdown level1 summary"><p>Bill Acceptor 2 Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;billAcceptor2&quot;)]
+public LightStateClass BillAcceptor2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CardReader_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CardReader*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CardReader" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CardReader">CardReader</h4>
+  <div class="markdown level1 summary"><p>Card Reader Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;cardReader&quot;)]
+public LightStateClass CardReader { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CardReader2_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CardReader2*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CardReader2" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CardReader2">CardReader2</h4>
+  <div class="markdown level1 summary"><p>Card Reader 2 Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;cardReader2&quot;)]
+public LightStateClass CardReader2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CoinAcceptor_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CoinAcceptor*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CoinAcceptor" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CoinAcceptor">CoinAcceptor</h4>
+  <div class="markdown level1 summary"><p>Coin Acceptor Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;coinAcceptor&quot;)]
+public LightStateClass CoinAcceptor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CoinDispenser_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CoinDispenser*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_CoinDispenser" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.CoinDispenser">CoinDispenser</h4>
+  <div class="markdown level1 summary"><p>Coin Dispenser Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;coinDispenser&quot;)]
+public LightStateClass CoinDispenser { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_Contactless_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.Contactless*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_Contactless" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.Contactless">Contactless</h4>
+  <div class="markdown level1 summary"><p>Contactless Reader Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;contactless&quot;)]
+public LightStateClass Contactless { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_DocumentPrinter_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.DocumentPrinter*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_DocumentPrinter" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.DocumentPrinter">DocumentPrinter</h4>
+  <div class="markdown level1 summary"><p>Document Printer Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;documentPrinter&quot;)]
+public LightStateClass DocumentPrinter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_EnvelopeDepository_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.EnvelopeDepository*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_EnvelopeDepository" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.EnvelopeDepository">EnvelopeDepository</h4>
+  <div class="markdown level1 summary"><p>Envelope Depository Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;envelopeDepository&quot;)]
+public LightStateClass EnvelopeDepository { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_EnvelopeDispenser_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.EnvelopeDispenser*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_EnvelopeDispenser" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.EnvelopeDispenser">EnvelopeDispenser</h4>
+  <div class="markdown level1 summary"><p>Envelope Dispenser Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;envelopeDispenser&quot;)]
+public LightStateClass EnvelopeDispenser { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_ExtendedProperties_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.ExtendedProperties*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_ExtendedProperties" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.ExtendedProperties">ExtendedProperties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public Dictionary&lt;string, LightStateClass&gt; ExtendedProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_ExtensionData_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.ExtensionData*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_ExtensionData" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.ExtensionData">ExtensionData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonExtensionData]
+public Dictionary&lt;string, JsonElement&gt; ExtensionData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Text.Json.JsonElement</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_FasciaLight_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.FasciaLight*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_FasciaLight" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.FasciaLight">FasciaLight</h4>
+  <div class="markdown level1 summary"><p>Fascia Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;fasciaLight&quot;)]
+public LightStateClass FasciaLight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_NotesDispenser_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.NotesDispenser*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_NotesDispenser" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.NotesDispenser">NotesDispenser</h4>
+  <div class="markdown level1 summary"><p>Notes Dispenser Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;notesDispenser&quot;)]
+public LightStateClass NotesDispenser { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_NotesDispenser2_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.NotesDispenser2*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_NotesDispenser2" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.NotesDispenser2">NotesDispenser2</h4>
+  <div class="markdown level1 summary"><p>Notes Dispenser 2 Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;notesDispenser2&quot;)]
+public LightStateClass NotesDispenser2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_PassbookPrinter_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.PassbookPrinter*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_PassbookPrinter" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.PassbookPrinter">PassbookPrinter</h4>
+  <div class="markdown level1 summary"><p>Passbook Printer Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;passbookPrinter&quot;)]
+public LightStateClass PassbookPrinter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_PinPad_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.PinPad*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_PinPad" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.PinPad">PinPad</h4>
+  <div class="markdown level1 summary"><p>Pin Pad Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;pinPad&quot;)]
+public LightStateClass PinPad { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_ReceiptPrinter_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.ReceiptPrinter*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_ReceiptPrinter" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.ReceiptPrinter">ReceiptPrinter</h4>
+  <div class="markdown level1 summary"><p>Receipt Printer Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;receiptPrinter&quot;)]
+public LightStateClass ReceiptPrinter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_Scanner_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.Scanner*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_Scanner" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.Scanner">Scanner</h4>
+  <div class="markdown level1 summary"><p>Scanner Light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;scanner&quot;)]
+public LightStateClass Scanner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusBad_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusBad*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusBad" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusBad">StatusBad</h4>
+  <div class="markdown level1 summary"><p>Status Indicator light - Bad.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;statusBad&quot;)]
+public LightStateClass StatusBad { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusGood_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusGood*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusGood" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusGood">StatusGood</h4>
+  <div class="markdown level1 summary"><p>Status Indicator light - Good.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;statusGood&quot;)]
+public LightStateClass StatusGood { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusInService_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusInService*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusInService" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusInService">StatusInService</h4>
+  <div class="markdown level1 summary"><p>Status Indicator light - In Service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;statusInService&quot;)]
+public LightStateClass StatusInService { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusSupervisor_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusSupervisor*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusSupervisor" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusSupervisor">StatusSupervisor</h4>
+  <div class="markdown level1 summary"><p>Status Indicator light - Supervisor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;statusSupervisor&quot;)]
+public LightStateClass StatusSupervisor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusWarning_" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusWarning*"></a>
+  <h4 id="XFS4IoT_Lights_Commands_SetLightCommand_PayloadData_StatusWarning" data-uid="XFS4IoT.Lights.Commands.SetLightCommand.PayloadData.StatusWarning">StatusWarning</h4>
+  <div class="markdown level1 summary"><p>Status Indicator light - Warning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;statusWarning&quot;)]
+public LightStateClass StatusWarning { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Lights.LightStateClass.html">LightStateClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

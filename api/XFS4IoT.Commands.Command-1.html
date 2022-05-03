@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Command&lt;T&gt;
+   | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Command&lt;T&gt;
+   | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoT.Commands.Command`1">
+  
+  
+  <h1 id="XFS4IoT_Commands_Command_1" data-uid="XFS4IoT.Commands.Command`1" class="text-break">Class Command&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="XFS4IoT.MessageBase.html">MessageBase</a></div>
+    <div class="level2"><a class="xref" href="XFS4IoT.Message-1.html">Message</a>&lt;T&gt;</div>
+    <div class="level3"><span class="xref">Command&lt;T&gt;</span></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Auxiliaries.Commands.ClearAutoStartupTimeCommand.html">ClearAutoStartupTimeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Auxiliaries.Commands.GetAutoStartupTimeCommand.html">GetAutoStartupTimeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Auxiliaries.Commands.RegisterCommand.html">RegisterCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Auxiliaries.Commands.SetAutoStartupTimeCommand.html">SetAutoStartupTimeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Auxiliaries.Commands.SetAuxiliariesCommand.html">SetAuxiliariesCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.BarcodeReader.Commands.ReadCommand.html">ReadCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.BarcodeReader.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.ClearCommand.html">ClearCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.GetStorageInfoCommand.html">GetStorageInfoCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.ImportCommand.html">ImportCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.MatchCommand.html">MatchCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.ReadCommand.html">ReadCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.SetDataPersistenceCommand.html">SetDataPersistenceCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Biometric.Commands.SetMatchCommand.html">SetMatchCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Camera.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Camera.Commands.TakePictureCommand.html">TakePictureCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.ChipIOCommand.html">ChipIOCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.ChipPowerCommand.html">ChipPowerCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.EMVClessConfigureCommand.html">EMVClessConfigureCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.EMVClessIssuerUpdateCommand.html">EMVClessIssuerUpdateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.EMVClessPerformTransactionCommand.html">EMVClessPerformTransactionCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.EMVClessQueryApplicationsCommand.html">EMVClessQueryApplicationsCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.MoveCommand.html">MoveCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.QueryIFMIdentifierCommand.html">QueryIFMIdentifierCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.ReadRawDataCommand.html">ReadRawDataCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.SetKeyCommand.html">SetKeyCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CardReader.Commands.WriteRawDataCommand.html">WriteRawDataCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.CashInCommand.html">CashInCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.CashInEndCommand.html">CashInEndCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.CashInRollbackCommand.html">CashInRollbackCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.CashInStartCommand.html">CashInStartCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.CashUnitCountCommand.html">CashUnitCountCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.CompareSignatureCommand.html">CompareSignatureCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.ConfigureNoteReaderCommand.html">ConfigureNoteReaderCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.ConfigureNoteTypesCommand.html">ConfigureNoteTypesCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.CreateSignatureCommand.html">CreateSignatureCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.DepleteCommand.html">DepleteCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.DeviceLockControlCommand.html">DeviceLockControlCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.GetCashInStatusCommand.html">GetCashInStatusCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.GetDepleteSourceCommand.html">GetDepleteSourceCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.GetDeviceLockStatusCommand.html">GetDeviceLockStatusCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.GetPositionCapabilitiesCommand.html">GetPositionCapabilitiesCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.GetPresentStatusCommand.html">GetPresentStatusCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.GetReplenishTargetCommand.html">GetReplenishTargetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.PreparePresentCommand.html">PreparePresentCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.PresentMediaCommand.html">PresentMediaCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashAcceptor.Commands.ReplenishCommand.html">ReplenishCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.CountCommand.html">CountCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.DenominateCommand.html">DenominateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.DispenseCommand.html">DispenseCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.GetMixTableCommand.html">GetMixTableCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.GetMixTypesCommand.html">GetMixTypesCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.GetPresentStatusCommand.html">GetPresentStatusCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.PrepareDispenseCommand.html">PrepareDispenseCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.PresentCommand.html">PresentCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.RejectCommand.html">RejectCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.SetMixTableCommand.html">SetMixTableCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashDispenser.Commands.TestCashUnitsCommand.html">TestCashUnitsCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.CalibrateCashUnitCommand.html">CalibrateCashUnitCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.CloseShutterCommand.html">CloseShutterCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.GetBankNoteTypesCommand.html">GetBankNoteTypesCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.GetClassificationListCommand.html">GetClassificationListCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.GetItemInfoCommand.html">GetItemInfoCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.GetTellerInfoCommand.html">GetTellerInfoCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.OpenSafeDoorCommand.html">OpenSafeDoorCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.OpenShutterCommand.html">OpenShutterCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.RetractCommand.html">RetractCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.SetClassificationListCommand.html">SetClassificationListCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.CashManagement.Commands.SetTellerInfoCommand.html">SetTellerInfoCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.CancelCommand.html">CancelCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.CapabilitiesCommand.html">CapabilitiesCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.ClearCommandNonceCommand.html">ClearCommandNonceCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.GetCommandNonceCommand.html">GetCommandNonceCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.GetTransactionStateCommand.html">GetTransactionStateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.PowerSaveControlCommand.html">PowerSaveControlCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.SetTransactionStateCommand.html">SetTransactionStateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.SetVersionsCommand.html">SetVersionsCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Common.Commands.StatusCommand.html">StatusCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Crypto.Commands.CryptoDataCommand.html">CryptoDataCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Crypto.Commands.DigestCommand.html">DigestCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Crypto.Commands.GenerateAuthenticationCommand.html">GenerateAuthenticationCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Crypto.Commands.GenerateRandomCommand.html">GenerateRandomCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Crypto.Commands.VerifyAuthenticationCommand.html">VerifyAuthenticationCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Keyboard.Commands.DataEntryCommand.html">DataEntryCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Keyboard.Commands.DefineLayoutCommand.html">DefineLayoutCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Keyboard.Commands.GetLayoutCommand.html">GetLayoutCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Keyboard.Commands.KeypressBeepCommand.html">KeypressBeepCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Keyboard.Commands.PinEntryCommand.html">PinEntryCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Keyboard.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Keyboard.Commands.SecureKeyEntryCommand.html">SecureKeyEntryCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.DeleteKeyCommand.html">DeleteKeyCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.DeriveKeyCommand.html">DeriveKeyCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.ExportRSADeviceSignedItemCommand.html">ExportRSADeviceSignedItemCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.ExportRSAIssuerSignedItemCommand.html">ExportRSAIssuerSignedItemCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.GenerateKCVCommand.html">GenerateKCVCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.GenerateRSAKeyPairCommand.html">GenerateRSAKeyPairCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.GetCertificateCommand.html">GetCertificateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.GetKeyDetailCommand.html">GetKeyDetailCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.ImportKeyCommand.html">ImportKeyCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.InitializationCommand.html">InitializationCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.LoadCertificateCommand.html">LoadCertificateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.ReplaceCertificateCommand.html">ReplaceCertificateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.StartAuthenticateCommand.html">StartAuthenticateCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.KeyManagement.Commands.StartKeyExchangeCommand.html">StartKeyExchangeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Lights.Commands.SetLightCommand.html">SetLightCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.GetPinBlockCommand.html">GetPinBlockCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.GetQueryPCIPTSDeviceIdCommand.html">GetQueryPCIPTSDeviceIdCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.LocalDESCommand.html">LocalDESCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.LocalVisaCommand.html">LocalVisaCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.MaintainPinCommand.html">MaintainPinCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.PresentIDCCommand.html">PresentIDCCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.PinPad.Commands.SetPinBlockDataCommand.html">SetPinBlockDataCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.ControlMediaCommand.html">ControlMediaCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.ControlPassbookCommand.html">ControlPassbookCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.DispensePaperCommand.html">DispensePaperCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.GetCodelineMappingCommand.html">GetCodelineMappingCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.GetFormListCommand.html">GetFormListCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.GetMediaListCommand.html">GetMediaListCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.GetQueryFieldCommand.html">GetQueryFieldCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.GetQueryFormCommand.html">GetQueryFormCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.GetQueryMediaCommand.html">GetQueryMediaCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.LoadDefinitionCommand.html">LoadDefinitionCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.MediaExtentsCommand.html">MediaExtentsCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.PrintFormCommand.html">PrintFormCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.PrintNativeCommand.html">PrintNativeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.PrintRawCommand.html">PrintRawCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.ReadFormCommand.html">ReadFormCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.ReadImageCommand.html">ReadImageCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.ResetCountCommand.html">ResetCountCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.RetractMediaCommand.html">RetractMediaCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.SetBlackMarkModeCommand.html">SetBlackMarkModeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Printer.Commands.SupplyReplenishCommand.html">SupplyReplenishCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.ServicePublisher.Commands.GetServicesCommand.html">GetServicesCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Storage.Commands.EndExchangeCommand.html">EndExchangeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Storage.Commands.GetStorageCommand.html">GetStorageCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Storage.Commands.SetStorageCommand.html">SetStorageCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.Storage.Commands.StartExchangeCommand.html">StartExchangeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.BeepCommand.html">BeepCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.ClearScreenCommand.html">ClearScreenCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.DefineKeysCommand.html">DefineKeysCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.GetFormListCommand.html">GetFormListCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.GetKeyDetailCommand.html">GetKeyDetailCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.GetQueryFieldCommand.html">GetQueryFieldCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.GetQueryFormCommand.html">GetQueryFormCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.LoadFormCommand.html">LoadFormCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.ReadCommand.html">ReadCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.ReadFormCommand.html">ReadFormCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.ResetCommand.html">ResetCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.SetResolutionCommand.html">SetResolutionCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.WriteCommand.html">WriteCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.TextTerminal.Commands.WriteFormCommand.html">WriteFormCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorApplication.Commands.GetActiveInterfaceCommand.html">GetActiveInterfaceCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorApplication.Commands.SetActiveInterfaceCommand.html">SetActiveInterfaceCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorApplication.Commands.StartLocalApplicationCommand.html">StartLocalApplicationCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorMode.Commands.EnterModeAcknowledgeCommand.html">EnterModeAcknowledgeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorMode.Commands.EnterModeRequestCommand.html">EnterModeRequestCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorMode.Commands.ExitModeAcknowledgeCommand.html">ExitModeAcknowledgeCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorMode.Commands.ExitModeRequestCommand.html">ExitModeRequestCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoT.VendorMode.Commands.RegisterCommand.html">RegisterCommand</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoTCoreTest.Command.UnserialiseTests.TestCommand1.html">UnserialiseTests.TestCommand1</a></div>
+      <div class="level4"><a class="xref" href="XFS4IoTCoreTest.Command.UnserialiseTests.TestCommand2.html">UnserialiseTests.TestCommand2</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ICloneable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoT.Message-1.html#XFS4IoT_Message_1_Payload">Message&lt;T&gt;.Payload</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoT.MessageBase.html#XFS4IoT_MessageBase_Header">MessageBase.Header</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoT.MessageBase.html#XFS4IoT_MessageBase_Serialise">MessageBase.Serialise()</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoT.MessageBase.html#XFS4IoT_MessageBase_Clone">MessageBase.Clone()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoT.Commands.html">XFS4IoT.Commands</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Core.dll</h6>
+  <h5 id="XFS4IoT_Commands_Command_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+public abstract class Command&lt;T&gt; : Message&lt;T&gt;, ICloneable where T : MessagePayloadBase</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="XFS4IoT_Commands_Command_1__ctor_" data-uid="XFS4IoT.Commands.Command`1.#ctor*"></a>
+  <h4 id="XFS4IoT_Commands_Command_1__ctor_System_Int32__0_" data-uid="XFS4IoT.Commands.Command`1.#ctor(System.Int32,`0)">Command(Int32, T)</h4>
+  <div class="markdown level1 summary"><p>Initialise any command objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Command(int RequestId, T Payload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">RequestId</span></td>
+        <td><p>request id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">Payload</span></td>
+        <td><p>payload contents</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ICloneable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VendorModeServiceProvider
+   | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VendorModeServiceProvider
+   | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoTServer.VendorModeServiceProvider">
+  
+  
+  <h1 id="XFS4IoTServer_VendorModeServiceProvider" data-uid="XFS4IoTServer.VendorModeServiceProvider" class="text-break">Class VendorModeServiceProvider
+  </h1>
+  <div class="markdown level0 summary"><p>The vendor mode service provider</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="XFS4IoTServer.CommandDispatcher.html">CommandDispatcher</a></div>
+    <div class="level2"><a class="xref" href="XFS4IoTServer.ServiceProvider.html">ServiceProvider</a></div>
+    <div class="level3"><span class="xref">VendorModeServiceProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="XFS4IoTServer.IServiceProvider.html">IServiceProvider</a></div>
+    <div><a class="xref" href="XFS4IoTServer.ICommandDispatcher.html">ICommandDispatcher</a></div>
+    <div><a class="xref" href="XFS4IoTServer.IVendorModeService.html">IVendorModeService</a></div>
+    <div><a class="xref" href="XFS4IoTFramework.Common.ICommonService.html">ICommonService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_RunAsync">ServiceProvider.RunAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_Name">ServiceProvider.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_Uri">ServiceProvider.Uri</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_WSUri">ServiceProvider.WSUri</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_Device">ServiceProvider.Device</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Object_">ServiceProvider.BroadcastEvent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Collections_Generic_IEnumerable_XFS4IoTServer_IConnection__System_Object_">ServiceProvider.BroadcastEvent(IEnumerable&lt;IConnection&gt;, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Dispatch_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_">CommandDispatcher.Dispatch(IConnection, MessageBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_DispatchError_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_System_Exception_">CommandDispatcher.DispatchError(IConnection, MessageBase, Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__">CommandDispatcher.CancelCommandsAsync(IConnection, List&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Commands">CommandDispatcher.Commands</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_ServiceClasses">CommandDispatcher.ServiceClasses</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTServer.html">XFS4IoTServer</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.VendorMode.dll</h6>
+  <h5 id="XFS4IoTServer_VendorModeServiceProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VendorModeServiceProvider : ServiceProvider, IServiceProvider, ICommandDispatcher, IVendorModeService, ICommonService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider__ctor_" data-uid="XFS4IoTServer.VendorModeServiceProvider.#ctor*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider__ctor_XFS4IoTServer_EndpointDetails_System_String_XFS4IoTServer_IDevice_ILogger_" data-uid="XFS4IoTServer.VendorModeServiceProvider.#ctor(XFS4IoTServer.EndpointDetails,System.String,XFS4IoTServer.IDevice,ILogger)">VendorModeServiceProvider(EndpointDetails, String, IDevice, ILogger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VendorModeServiceProvider(EndpointDetails endpointDetails, string ServiceName, IDevice device, ILogger logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.EndpointDetails.html">EndpointDetails</a></td>
+        <td><span class="parametername">endpointDetails</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ServiceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.IDevice.html">IDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_CommonCapabilities_" data-uid="XFS4IoTServer.VendorModeServiceProvider.CommonCapabilities*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_CommonCapabilities" data-uid="XFS4IoTServer.VendorModeServiceProvider.CommonCapabilities">CommonCapabilities</h4>
+  <div class="markdown level1 summary"><p>Stores Common interface capabilites internally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommonCapabilitiesClass CommonCapabilities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonCapabilitiesClass.html">CommonCapabilitiesClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_CommonStatus_" data-uid="XFS4IoTServer.VendorModeServiceProvider.CommonStatus*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_CommonStatus" data-uid="XFS4IoTServer.VendorModeServiceProvider.CommonStatus">CommonStatus</h4>
+  <div class="markdown level1 summary"><p>Common Status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommonStatusClass CommonStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.html">CommonStatusClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_PendingAcknowledge_" data-uid="XFS4IoTServer.VendorModeServiceProvider.PendingAcknowledge*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_PendingAcknowledge" data-uid="XFS4IoTServer.VendorModeServiceProvider.PendingAcknowledge">PendingAcknowledge</h4>
+  <div class="markdown level1 summary"><p>Pending on receiving acknowledge from the clients</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IConnection&gt; PendingAcknowledge { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="XFS4IoTServer.IConnection.html">IConnection</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_RegisteredClients_" data-uid="XFS4IoTServer.VendorModeServiceProvider.RegisteredClients*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_RegisteredClients" data-uid="XFS4IoTServer.VendorModeServiceProvider.RegisteredClients">RegisteredClients</h4>
+  <div class="markdown level1 summary"><p>List of registered client via Register command</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;IConnection, string&gt; RegisteredClients { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="XFS4IoTServer.IConnection.html">IConnection</a>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_VendorModeStatus_" data-uid="XFS4IoTServer.VendorModeServiceProvider.VendorModeStatus*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_VendorModeStatus" data-uid="XFS4IoTServer.VendorModeServiceProvider.VendorModeStatus">VendorModeStatus</h4>
+  <div class="markdown level1 summary"><p>Stores vendor mode status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VendorModeStatusClass VendorModeStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.VendorModeStatusClass.html">VendorModeStatusClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_BroadcastEnterModeRequestEvent_" data-uid="XFS4IoTServer.VendorModeServiceProvider.BroadcastEnterModeRequestEvent*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_BroadcastEnterModeRequestEvent" data-uid="XFS4IoTServer.VendorModeServiceProvider.BroadcastEnterModeRequestEvent">BroadcastEnterModeRequestEvent()</h4>
+  <div class="markdown level1 summary"><p>This service event is used to indicate the request to enter Vendor Mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BroadcastEnterModeRequestEvent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_BroadcastExitModeRequestEvent_" data-uid="XFS4IoTServer.VendorModeServiceProvider.BroadcastExitModeRequestEvent*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_BroadcastExitModeRequestEvent" data-uid="XFS4IoTServer.VendorModeServiceProvider.BroadcastExitModeRequestEvent">BroadcastExitModeRequestEvent()</h4>
+  <div class="markdown level1 summary"><p>This service event is used to indicate the request to exit Vendor Mode to all registered clients</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task BroadcastExitModeRequestEvent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_ErrorEvent_" data-uid="XFS4IoTServer.VendorModeServiceProvider.ErrorEvent*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_ErrorEvent_XFS4IoTFramework_Common_CommonStatusClass_ErrorEventIdEnum_XFS4IoTFramework_Common_CommonStatusClass_ErrorActionEnum_System_String_" data-uid="XFS4IoTServer.VendorModeServiceProvider.ErrorEvent(XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum,XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum,System.String)">ErrorEvent(CommonStatusClass.ErrorEventIdEnum, CommonStatusClass.ErrorActionEnum, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ErrorEvent(CommonStatusClass.ErrorEventIdEnum EventId, CommonStatusClass.ErrorActionEnum Action, string VendorDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum.html">CommonStatusClass.ErrorEventIdEnum</a></td>
+        <td><span class="parametername">EventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum.html">CommonStatusClass.ErrorActionEnum</a></td>
+        <td><span class="parametername">Action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">VendorDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_ModeEnteredEvent_" data-uid="XFS4IoTServer.VendorModeServiceProvider.ModeEnteredEvent*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_ModeEnteredEvent" data-uid="XFS4IoTServer.VendorModeServiceProvider.ModeEnteredEvent">ModeEnteredEvent()</h4>
+  <div class="markdown level1 summary"><p>This event is used to indicate that the system has entered Vendor Mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModeEnteredEvent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_ModeExitedEvent_" data-uid="XFS4IoTServer.VendorModeServiceProvider.ModeExitedEvent*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_ModeExitedEvent" data-uid="XFS4IoTServer.VendorModeServiceProvider.ModeExitedEvent">ModeExitedEvent()</h4>
+  <div class="markdown level1 summary"><p>This event is used to indicate that the system has exited Vendor Mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ModeExitedEvent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_NonceClearedEvent_" data-uid="XFS4IoTServer.VendorModeServiceProvider.NonceClearedEvent*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_NonceClearedEvent_System_String_" data-uid="XFS4IoTServer.VendorModeServiceProvider.NonceClearedEvent(System.String)">NonceClearedEvent(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task NonceClearedEvent(string ReasonDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ReasonDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_VendorModeServiceProvider_StatusChangedEvent_" data-uid="XFS4IoTServer.VendorModeServiceProvider.StatusChangedEvent*"></a>
+  <h4 id="XFS4IoTServer_VendorModeServiceProvider_StatusChangedEvent_System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_DeviceEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_PositionStatusEnum__System_Nullable_System_Int32__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_AntiFraudModuleEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_ExchangeEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_EndToEndSecurityEnum__" data-uid="XFS4IoTServer.VendorModeServiceProvider.StatusChangedEvent(System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.DeviceEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.PositionStatusEnum},System.Nullable{System.Int32},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.AntiFraudModuleEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.ExchangeEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.EndToEndSecurityEnum})">StatusChangedEvent(Nullable&lt;CommonStatusClass.DeviceEnum&gt;, Nullable&lt;CommonStatusClass.PositionStatusEnum&gt;, Nullable&lt;Int32&gt;, Nullable&lt;CommonStatusClass.AntiFraudModuleEnum&gt;, Nullable&lt;CommonStatusClass.ExchangeEnum&gt;, Nullable&lt;CommonStatusClass.EndToEndSecurityEnum&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StatusChangedEvent(CommonStatusClass.DeviceEnum? Device, CommonStatusClass.PositionStatusEnum? Position, int? PowerSaveRecoveryTime, CommonStatusClass.AntiFraudModuleEnum? AntiFraudModule, CommonStatusClass.ExchangeEnum? Exchange, CommonStatusClass.EndToEndSecurityEnum? EndToEndSecurity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.DeviceEnum.html">CommonStatusClass.DeviceEnum</a>&gt;</td>
+        <td><span class="parametername">Device</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.PositionStatusEnum.html">CommonStatusClass.PositionStatusEnum</a>&gt;</td>
+        <td><span class="parametername">Position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">PowerSaveRecoveryTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.AntiFraudModuleEnum.html">CommonStatusClass.AntiFraudModuleEnum</a>&gt;</td>
+        <td><span class="parametername">AntiFraudModule</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ExchangeEnum.html">CommonStatusClass.ExchangeEnum</a>&gt;</td>
+        <td><span class="parametername">Exchange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.EndToEndSecurityEnum.html">CommonStatusClass.EndToEndSecurityEnum</a>&gt;</td>
+        <td><span class="parametername">EndToEndSecurity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="XFS4IoTServer.IServiceProvider.html">IServiceProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTServer.ICommandDispatcher.html">ICommandDispatcher</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTServer.IVendorModeService.html">IVendorModeService</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTFramework.Common.ICommonService.html">ICommonService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

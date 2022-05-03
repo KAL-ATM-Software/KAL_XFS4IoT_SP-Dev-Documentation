@@ -1,0 +1,959 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CardReaderServiceProvider
+   | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CardReaderServiceProvider
+   | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoTServer.CardReaderServiceProvider">
+  
+  
+  <h1 id="XFS4IoTServer_CardReaderServiceProvider" data-uid="XFS4IoTServer.CardReaderServiceProvider" class="text-break">Class CardReaderServiceProvider
+  </h1>
+  <div class="markdown level0 summary"><p>Default implimentation of a card reader service provider.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="XFS4IoTServer.CommandDispatcher.html">CommandDispatcher</a></div>
+    <div class="level2"><a class="xref" href="XFS4IoTServer.ServiceProvider.html">ServiceProvider</a></div>
+    <div class="level3"><span class="xref">CardReaderServiceProvider</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="XFS4IoTServer.IServiceProvider.html">IServiceProvider</a></div>
+    <div><a class="xref" href="XFS4IoTServer.ICommandDispatcher.html">ICommandDispatcher</a></div>
+    <div><a class="xref" href="XFS4IoTFramework.CardReader.ICardReaderService.html">ICardReaderService</a></div>
+    <div><a class="xref" href="XFS4IoTFramework.Common.ICommonService.html">ICommonService</a></div>
+    <div><a class="xref" href="XFS4IoTServer.ILightsService.html">ILightsService</a></div>
+    <div><a class="xref" href="XFS4IoTFramework.Storage.IStorageService.html">IStorageService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_RunAsync">ServiceProvider.RunAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_Name">ServiceProvider.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_Uri">ServiceProvider.Uri</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_WSUri">ServiceProvider.WSUri</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_Device">ServiceProvider.Device</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Object_">ServiceProvider.BroadcastEvent(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Collections_Generic_IEnumerable_XFS4IoTServer_IConnection__System_Object_">ServiceProvider.BroadcastEvent(IEnumerable&lt;IConnection&gt;, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Dispatch_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_">CommandDispatcher.Dispatch(IConnection, MessageBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_DispatchError_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_System_Exception_">CommandDispatcher.DispatchError(IConnection, MessageBase, Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__">CommandDispatcher.CancelCommandsAsync(IConnection, List&lt;Int32&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Commands">CommandDispatcher.Commands</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_ServiceClasses">CommandDispatcher.ServiceClasses</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTServer.html">XFS4IoTServer</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.CardReader.dll</h6>
+  <h5 id="XFS4IoTServer_CardReaderServiceProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CardReaderServiceProvider : ServiceProvider, IServiceProvider, ICommandDispatcher, ICardReaderService, ICommonService, ILightsService, IStorageService</code></pre>
+  </div>
+  <h5 id="XFS4IoTServer_CardReaderServiceProvider_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This represents a typical card reader, which only implements the CardReader and Common interfaces.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider__ctor_" data-uid="XFS4IoTServer.CardReaderServiceProvider.#ctor*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider__ctor_XFS4IoTServer_EndpointDetails_System_String_XFS4IoTServer_IDevice_ILogger_XFS4IoTServer_IPersistentData_" data-uid="XFS4IoTServer.CardReaderServiceProvider.#ctor(XFS4IoTServer.EndpointDetails,System.String,XFS4IoTServer.IDevice,ILogger,XFS4IoTServer.IPersistentData)">CardReaderServiceProvider(EndpointDetails, String, IDevice, ILogger, IPersistentData)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardReaderServiceProvider(EndpointDetails endpointDetails, string ServiceName, IDevice device, ILogger logger, IPersistentData persistentData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.EndpointDetails.html">EndpointDetails</a></td>
+        <td><span class="parametername">endpointDetails</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ServiceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.IDevice.html">IDevice</a></td>
+        <td><span class="parametername">device</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.IPersistentData.html">IPersistentData</a></td>
+        <td><span class="parametername">persistentData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_CardReaderCapabilities_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardReaderCapabilities*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_CardReaderCapabilities" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardReaderCapabilities">CardReaderCapabilities</h4>
+  <div class="markdown level1 summary"><p>Stores CardReader interface capabilites internally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardReaderCapabilitiesClass CardReaderCapabilities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CardReaderCapabilitiesClass.html">CardReaderCapabilitiesClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_CardReaderStatus_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardReaderStatus*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_CardReaderStatus" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardReaderStatus">CardReaderStatus</h4>
+  <div class="markdown level1 summary"><p>CardReader Status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CardReaderStatusClass CardReaderStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CardReaderStatusClass.html">CardReaderStatusClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_CardUnits_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardUnits*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_CardUnits" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardUnits">CardUnits</h4>
+  <div class="markdown level1 summary"><p>Card storage structure information of this device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, CardUnitStorage&gt; CardUnits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoTFramework.Storage.CardUnitStorage.html">CardUnitStorage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_CashUnits_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CashUnits*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_CashUnits" data-uid="XFS4IoTServer.CardReaderServiceProvider.CashUnits">CashUnits</h4>
+  <div class="markdown level1 summary"><p>Cash storage structure information of this device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, CashUnitStorage&gt; CashUnits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoTFramework.Storage.CashUnitStorage.html">CashUnitStorage</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_CommonCapabilities_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CommonCapabilities*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_CommonCapabilities" data-uid="XFS4IoTServer.CardReaderServiceProvider.CommonCapabilities">CommonCapabilities</h4>
+  <div class="markdown level1 summary"><p>Stores Common interface capabilites internally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommonCapabilitiesClass CommonCapabilities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonCapabilitiesClass.html">CommonCapabilitiesClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_CommonStatus_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CommonStatus*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_CommonStatus" data-uid="XFS4IoTServer.CardReaderServiceProvider.CommonStatus">CommonStatus</h4>
+  <div class="markdown level1 summary"><p>Common Status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommonStatusClass CommonStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.html">CommonStatusClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_StorageType_" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageType*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_StorageType" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageType">StorageType</h4>
+  <div class="markdown level1 summary"><p>Return which type of storage SP is using</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StorageTypeEnum StorageType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Storage.StorageTypeEnum.html">StorageTypeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_CardActionEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardActionEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_CardActionEvent_XFS4IoTFramework_CardReader_MovePosition_XFS4IoTFramework_CardReader_MovePosition_" data-uid="XFS4IoTServer.CardReaderServiceProvider.CardActionEvent(XFS4IoTFramework.CardReader.MovePosition,XFS4IoTFramework.CardReader.MovePosition)">CardActionEvent(MovePosition, MovePosition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task CardActionEvent(MovePosition To, MovePosition From)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.MovePosition.html">MovePosition</a></td>
+        <td><span class="parametername">To</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.MovePosition.html">MovePosition</a></td>
+        <td><span class="parametername">From</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_ErrorEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.ErrorEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_ErrorEvent_XFS4IoTFramework_Common_CommonStatusClass_ErrorEventIdEnum_XFS4IoTFramework_Common_CommonStatusClass_ErrorActionEnum_System_String_" data-uid="XFS4IoTServer.CardReaderServiceProvider.ErrorEvent(XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum,XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum,System.String)">ErrorEvent(CommonStatusClass.ErrorEventIdEnum, CommonStatusClass.ErrorActionEnum, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task ErrorEvent(CommonStatusClass.ErrorEventIdEnum EventId, CommonStatusClass.ErrorActionEnum Action, string VendorDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum.html">CommonStatusClass.ErrorEventIdEnum</a></td>
+        <td><span class="parametername">EventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum.html">CommonStatusClass.ErrorActionEnum</a></td>
+        <td><span class="parametername">Action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">VendorDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_MediaRemovedEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.MediaRemovedEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_MediaRemovedEvent" data-uid="XFS4IoTServer.CardReaderServiceProvider.MediaRemovedEvent">MediaRemovedEvent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task MediaRemovedEvent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_NonceClearedEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.NonceClearedEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_NonceClearedEvent_System_String_" data-uid="XFS4IoTServer.CardReaderServiceProvider.NonceClearedEvent(System.String)">NonceClearedEvent(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task NonceClearedEvent(string ReasonDescription)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ReasonDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_StatusChangedEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.StatusChangedEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_StatusChangedEvent_System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_DeviceEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_PositionStatusEnum__System_Nullable_System_Int32__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_AntiFraudModuleEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_ExchangeEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_EndToEndSecurityEnum__" data-uid="XFS4IoTServer.CardReaderServiceProvider.StatusChangedEvent(System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.DeviceEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.PositionStatusEnum},System.Nullable{System.Int32},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.AntiFraudModuleEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.ExchangeEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.EndToEndSecurityEnum})">StatusChangedEvent(Nullable&lt;CommonStatusClass.DeviceEnum&gt;, Nullable&lt;CommonStatusClass.PositionStatusEnum&gt;, Nullable&lt;Int32&gt;, Nullable&lt;CommonStatusClass.AntiFraudModuleEnum&gt;, Nullable&lt;CommonStatusClass.ExchangeEnum&gt;, Nullable&lt;CommonStatusClass.EndToEndSecurityEnum&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StatusChangedEvent(CommonStatusClass.DeviceEnum? Device, CommonStatusClass.PositionStatusEnum? Position, int? PowerSaveRecoveryTime, CommonStatusClass.AntiFraudModuleEnum? AntiFraudModule, CommonStatusClass.ExchangeEnum? Exchange, CommonStatusClass.EndToEndSecurityEnum? EndToEndSecurity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.DeviceEnum.html">CommonStatusClass.DeviceEnum</a>&gt;</td>
+        <td><span class="parametername">Device</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.PositionStatusEnum.html">CommonStatusClass.PositionStatusEnum</a>&gt;</td>
+        <td><span class="parametername">Position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">PowerSaveRecoveryTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.AntiFraudModuleEnum.html">CommonStatusClass.AntiFraudModuleEnum</a>&gt;</td>
+        <td><span class="parametername">AntiFraudModule</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ExchangeEnum.html">CommonStatusClass.ExchangeEnum</a>&gt;</td>
+        <td><span class="parametername">Exchange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.EndToEndSecurityEnum.html">CommonStatusClass.EndToEndSecurityEnum</a>&gt;</td>
+        <td><span class="parametername">EndToEndSecurity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_StorageChangedEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageChangedEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_StorageChangedEvent_System_Collections_Generic_List_System_String__" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageChangedEvent(System.Collections.Generic.List{System.String})">StorageChangedEvent(List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StorageChangedEvent(List&lt;string&gt; CardUnitIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">CardUnitIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_StorageErrorEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageErrorEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_StorageErrorEvent_XFS4IoTFramework_Storage_FailureEnum_System_Collections_Generic_List_System_String__" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageErrorEvent(XFS4IoTFramework.Storage.FailureEnum,System.Collections.Generic.List{System.String})">StorageErrorEvent(FailureEnum, List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StorageErrorEvent(FailureEnum Failure, List&lt;string&gt; CardUnitIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Storage.FailureEnum.html">FailureEnum</a></td>
+        <td><span class="parametername">Failure</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">CardUnitIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_StorageThresholdEvent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageThresholdEvent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_StorageThresholdEvent_System_Collections_Generic_List_System_String__" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorageThresholdEvent(System.Collections.Generic.List{System.String})">StorageThresholdEvent(List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StorageThresholdEvent(List&lt;string&gt; CardUnitIds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">CardUnitIds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_StorePersistent_" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorePersistent*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_StorePersistent" data-uid="XFS4IoTServer.CardReaderServiceProvider.StorePersistent">StorePersistent()</h4>
+  <div class="markdown level1 summary"><p>Store CardUnits and CashUnits persistently</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StorePersistent()</code></pre>
+  </div>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_UpdateCardStorageCount_" data-uid="XFS4IoTServer.CardReaderServiceProvider.UpdateCardStorageCount*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_UpdateCardStorageCount_System_String_System_Int32_System_String_" data-uid="XFS4IoTServer.CardReaderServiceProvider.UpdateCardStorageCount(System.String,System.Int32,System.String)">UpdateCardStorageCount(String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Update storage count from the framework after media movement command is processed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task UpdateCardStorageCount(string storageId, int count, string preservedStorage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">storageId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">preservedStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_CardReaderServiceProvider_UpdateCashAccounting_" data-uid="XFS4IoTServer.CardReaderServiceProvider.UpdateCashAccounting*"></a>
+  <h4 id="XFS4IoTServer_CardReaderServiceProvider_UpdateCashAccounting_System_Collections_Generic_Dictionary_System_String_XFS4IoTFramework_Storage_CashUnitCountClass__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="XFS4IoTServer.CardReaderServiceProvider.UpdateCashAccounting(System.Collections.Generic.Dictionary{System.String,XFS4IoTFramework.Storage.CashUnitCountClass},System.Collections.Generic.Dictionary{System.String,System.String})">UpdateCashAccounting(Dictionary&lt;String, CashUnitCountClass&gt;, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>UpdateCashAccounting
+Update cash unit status and counts managed by the device specific class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateCashAccounting(Dictionary&lt;string, CashUnitCountClass&gt; countDelta, Dictionary&lt;string, string&gt; preservedStorage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoTFramework.Storage.CashUnitCountClass.html">CashUnitCountClass</a>&gt;</td>
+        <td><span class="parametername">countDelta</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">preservedStorage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="XFS4IoTServer.IServiceProvider.html">IServiceProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTServer.ICommandDispatcher.html">ICommandDispatcher</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTFramework.CardReader.ICardReaderService.html">ICardReaderService</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTFramework.Common.ICommonService.html">ICommonService</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTServer.ILightsService.html">ILightsService</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoTFramework.Storage.IStorageService.html">IStorageService</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,891 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ICardReaderDevice
+   | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ICardReaderDevice
+   | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice">
+  
+  
+  <h1 id="XFS4IoTFramework_CardReader_ICardReaderDevice" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice" class="text-break">Interface ICardReaderDevice
+  </h1>
+  <div class="markdown level0 summary"><p>Interface defnition for the device specific class</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoTServer.IDevice.html#XFS4IoTServer_IDevice_RunAsync">IDevice.RunAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.IDevice.html#XFS4IoTServer_IDevice_SetServiceProvider">IDevice.SetServiceProvider</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTFramework.CardReader.html">XFS4IoTFramework.CardReader</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.CardReader.dll</h6>
+  <h5 id="XFS4IoTFramework_CardReader_ICardReaderDevice_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICardReaderDevice : IDevice</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_CardReaderCapabilities_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.CardReaderCapabilities*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_CardReaderCapabilities" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.CardReaderCapabilities">CardReaderCapabilities</h4>
+  <div class="markdown level1 summary"><p>CardReader Capabilities</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CardReaderCapabilitiesClass CardReaderCapabilities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CardReaderCapabilitiesClass.html">CardReaderCapabilitiesClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_CardReaderStatus_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.CardReaderStatus*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_CardReaderStatus" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.CardReaderStatus">CardReaderStatus</h4>
+  <div class="markdown level1 summary"><p>CardReader Status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CardReaderStatusClass CardReaderStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CardReaderStatusClass.html">CardReaderStatusClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_AcceptCardAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.AcceptCardAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_AcceptCardAsync_XFS4IoTFramework_CardReader_CommonCardCommandEvents_XFS4IoTFramework_CardReader_AcceptCardRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.AcceptCardAsync(XFS4IoTFramework.CardReader.CommonCardCommandEvents,XFS4IoTFramework.CardReader.AcceptCardRequest,System.Threading.CancellationToken)">AcceptCardAsync(CommonCardCommandEvents, AcceptCardRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>For motor driven card readers, the card unit checks whether a card has been inserted.
+All specified tracks are read immediately if the device can read with the low level accept command and store read data in the device specific class and set data on the ReadCardData method call.
+If reading the chip is requested, the chip will be contacted and reset and the ATR (AnswerTo Reset) data will be read.
+When this command completes the chip will be in contacted position. This command can also be used for an explicit cold reset of a previously contacted chip.
+This command should only be used for user cards and should not be used for permanently connected chips.
+If no card has been inserted, and for all other categories of card readers, the card unit waits for the period of time specified in the call for a card to be either inserted or pulled through.
+The InsertCardEvent will be generated when there is no card in the cardreader and the device is ready to accept a card.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AcceptCardResult&gt; AcceptCardAsync(CommonCardCommandEvents events, AcceptCardRequest acceptCardInfo, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.CommonCardCommandEvents.html">CommonCardCommandEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.AcceptCardRequest.html">AcceptCardRequest</a></td>
+        <td><span class="parametername">acceptCardInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.AcceptCardResult.html">AcceptCardResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_ChipIOAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ChipIOAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_ChipIOAsync_XFS4IoTFramework_CardReader_ChipIORequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ChipIOAsync(XFS4IoTFramework.CardReader.ChipIORequest,System.Threading.CancellationToken)">ChipIOAsync(ChipIORequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used to communicate with the chip.
+Transparent data is sent from the application to the chip andthe response of the chip is returned transparently to the application.
+The identification information e.g. ATR of the chip must be obtained before issuing this command.
+The identification information for a user card or the Memory Card Identification (when available) must initially be obtained using CardReader.ReadRawData.
+The identification information for subsequentresets of a user card can be obtained using either CardReader.ReadRawDat or CardReader.ChipPower.
+The ATR for permanent connected chips is always obtained through CardReader.ChipPower.
+For contactless chip card readers, applications need to specify which chip to contact with, as part of chipData, if more than one chip has been detected and multiple identification data has been returned by the CardReader.ReadRawData command.
+For contactless chip card readers a collision of two or more card signals may happen.
+In this case, if the deviceis not able to pick the strongest signal, the cardCollision error code will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ChipIOResult&gt; ChipIOAsync(ChipIORequest dataToSend, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.ChipIORequest.html">ChipIORequest</a></td>
+        <td><span class="parametername">dataToSend</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ChipIOResult.html">ChipIOResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_ChipPowerAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ChipPowerAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_ChipPowerAsync_XFS4IoTFramework_CardReader_ChipPowerRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ChipPowerAsync(XFS4IoTFramework.CardReader.ChipPowerRequest,System.Threading.CancellationToken)">ChipPowerAsync(ChipPowerRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command handles the power actions that can be done on the chip.For user chips, this command is only used after the chip has been contacted for the first time using the<a href="#cardreader.readrawdata">CardReader.ReadRawData</a> command. For contactless user chips, this command may be used todeactivate the contactless card communication.For permanently connected chip cards, this command is the only way to control the chip power.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ChipPowerResult&gt; ChipPowerAsync(ChipPowerRequest action, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.ChipPowerRequest.html">ChipPowerRequest</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ChipPowerResult.html">ChipPowerResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessConfigureAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessConfigureAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessConfigureAsync_XFS4IoTFramework_CardReader_EMVContactlessConfigureRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessConfigureAsync(XFS4IoTFramework.CardReader.EMVContactlessConfigureRequest,System.Threading.CancellationToken)">EMVContactlessConfigureAsync(EMVContactlessConfigureRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used to configure an intelligent contactless card reader before performing a contactlesstransaction.
+This command sets terminal related data elements, the list of terminal acceptable applications with associated application specific data and any encryption key data required for offline data authentication.
+This command should be used prior to CardReader.EMVClessPerformTransaction command.
+It may be calledonce on application start up or when any of the configuration parameters require to be changed.
+The configurationset by this command is persistent.This command should be called with a complete list of acceptable payment system applications as any previous configurations will be replaced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;EMVContactlessConfigureResult&gt; EMVContactlessConfigureAsync(EMVContactlessConfigureRequest terminalConfig, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.EMVContactlessConfigureRequest.html">EMVContactlessConfigureRequest</a></td>
+        <td><span class="parametername">terminalConfig</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.EMVContactlessConfigureResult.html">EMVContactlessConfigureResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessIssuerUpdateAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessIssuerUpdateAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessIssuerUpdateAsync_XFS4IoTFramework_CardReader_EMVClessCommandEvents_XFS4IoTFramework_CardReader_EMVContactlessIssuerUpdateRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessIssuerUpdateAsync(XFS4IoTFramework.CardReader.EMVClessCommandEvents,XFS4IoTFramework.CardReader.EMVContactlessIssuerUpdateRequest,System.Threading.CancellationToken)">EMVContactlessIssuerUpdateAsync(EMVClessCommandEvents, EMVContactlessIssuerUpdateRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command performs the post authorization processing on payment systems contactless cards.
+Before an online authorized transaction is considered complete, further chip processing may be requested by theissuer.
+This is only required when the authorization response includes issuer update data either issuer scriptsor issuer authentication data.
+The command enables the contactless card reader and waits for the customer to re-tap their card.
+The contactless chip card reader waits for the period of time specified in the command all for a card to be tapped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;EMVContactlessIssuerUpdateResult&gt; EMVContactlessIssuerUpdateAsync(EMVClessCommandEvents events, EMVContactlessIssuerUpdateRequest transactionData, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.EMVClessCommandEvents.html">EMVClessCommandEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.EMVContactlessIssuerUpdateRequest.html">EMVContactlessIssuerUpdateRequest</a></td>
+        <td><span class="parametername">transactionData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.EMVContactlessIssuerUpdateResult.html">EMVContactlessIssuerUpdateResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessPerformTransactionAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessPerformTransactionAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessPerformTransactionAsync_XFS4IoTFramework_CardReader_EMVClessCommandEvents_XFS4IoTFramework_CardReader_EMVContactlessPerformTransactionRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessPerformTransactionAsync(XFS4IoTFramework.CardReader.EMVClessCommandEvents,XFS4IoTFramework.CardReader.EMVContactlessPerformTransactionRequest,System.Threading.CancellationToken)">EMVContactlessPerformTransactionAsync(EMVClessCommandEvents, EMVContactlessPerformTransactionRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used to enable an intelligent contactless card reader.
+The transaction will start as soon as thecard tap is detected.
+Based on the configuration of the contactless chip card and the reader device, this command could return dataformatted either as magnetic stripe information or as a set of BER-TLV encoded EMV tags.
+This command supports magnetic stripe emulation cards and EMV-like contactless cards but cannot be used on storagecontactless cards.
+The latter must be managed using the CardReader.ReadRawData and CardReader.ChipIO commands.
+For specific payment system's card profiles an intelligent card reader could return a set of EMV tags along withmagnetic stripe formatted data.
+In this case, two contactless card data structures will be returned, onecontaining the magnetic stripe like data and one containing BER-TLV encoded tags.
+If no card has been tapped, the contactless chip card reader waits for the period of time specified in the commandcall for a card to be tapped.
+For intelligent contactless card readers, any in-built audio/visual feedback such as Beep/LEDs, need to becontrolled directly by the reader.
+These indications should be implemented based on the EMVCo and payment system'sspecifications.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;EMVContactlessPerformTransactionResult&gt; EMVContactlessPerformTransactionAsync(EMVClessCommandEvents events, EMVContactlessPerformTransactionRequest transactionData, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.EMVClessCommandEvents.html">EMVClessCommandEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.EMVContactlessPerformTransactionRequest.html">EMVContactlessPerformTransactionRequest</a></td>
+        <td><span class="parametername">transactionData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.EMVContactlessPerformTransactionResult.html">EMVContactlessPerformTransactionResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessQueryApplications_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessQueryApplications*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_EMVContactlessQueryApplications" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.EMVContactlessQueryApplications">EMVContactlessQueryApplications()</h4>
+  <div class="markdown level1 summary"><p>This command is used to retrieve the supported payment system applications available within an intelligentcontactless card unit.
+The payment system application can either be identified by an AID or by the AID incombination with a Kernel Identifier.
+The Kernel Identifier has been introduced by the EMVCo specifications; seeReference [3].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryEMVApplicationResult EMVContactlessQueryApplications()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.QueryEMVApplicationResult.html">QueryEMVApplicationResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_MoveCardAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.MoveCardAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_MoveCardAsync_XFS4IoTFramework_CardReader_MoveCardRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.MoveCardAsync(XFS4IoTFramework.CardReader.MoveCardRequest,System.Threading.CancellationToken)">MoveCardAsync(MoveCardRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is only applicable to motorized and latched dip card readers.
+If after a successful completion event the card is at the exit position, the card will be accessible to the user.
+A CardReader.MediaRemovedEvent is generated to inform the application when the card is taken.</p>
+<ul>
+<li><p>Motorized card readers
+Motorized card readers can physically move cards from or to the transport or exit positions or a storage.
+The default operation is to move a card in the transport position to the exit position.
+If the card is being moved from the exit position to the exit position, these are valid behaviors:
+The card does not move as the card reader can detect the card is already in the correct position.
+The card is moved back into the card reader then moved back to the exit to ensure the card is in the correct position.</p>
+</li>
+<li><p>Latched dip card readers
+Latched dips card readers can logically move cards from the transport position to the exit position by
+unlatching the card reader.That is, the card will not physically move but will be accessible to the user.</p>
+</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MoveCardResult&gt; MoveCardAsync(MoveCardRequest mvoeCardInfo, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.MoveCardRequest.html">MoveCardRequest</a></td>
+        <td><span class="parametername">mvoeCardInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.MoveCardResult.html">MoveCardResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_QueryIFMIdentifier_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.QueryIFMIdentifier*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_QueryIFMIdentifier" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.QueryIFMIdentifier">QueryIFMIdentifier()</h4>
+  <div class="markdown level1 summary"><p>This command is used to retrieve the complete list of registration authority Interface Module (IFM) identifiers.
+The primary registration authority is EMVCo but other organizations are also supported for historical or localcountry requirements.
+New registration authorities may be added in the future so applications should be able to handle the return of new(as yet undefined) IFM identifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryIFMIdentifierResult QueryIFMIdentifier()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.QueryIFMIdentifierResult.html">QueryIFMIdentifierResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_ReadCardAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ReadCardAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_ReadCardAsync_XFS4IoTFramework_CardReader_ReadCardCommandEvents_XFS4IoTFramework_CardReader_ReadCardRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ReadCardAsync(XFS4IoTFramework.CardReader.ReadCardCommandEvents,XFS4IoTFramework.CardReader.ReadCardRequest,System.Threading.CancellationToken)">ReadCardAsync(ReadCardCommandEvents, ReadCardRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Read alltracks specified.
+All specified tracks are read immediately or
+A security check via a security module(i.e. MM, CIM86) can be requested. If the security check fails however this should not stop valid data beingreturned.
+The response securityFail will be returned if the command specifies only security data to be read andthe security check could not be executed, in all other cases ok will be returned with the data field of theoutput parameter set to the relevant value including <em>hardwareError</em>.
+For non-motorized Card Readers which read track data on card exit, the invalidData error code is returned whena call to is made to read both track data and chip data.
+If the card unit is a latched dip unit then the device will latch the card when the chip card will be read,
+The card will remain latched until a call to EjectCard is made.
+For contactless chip card readers a collision of two or more card signals may happen.
+In this case, if the deviceis not able to pick the strongest signal, errorCardCollision will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ReadCardResult&gt; ReadCardAsync(ReadCardCommandEvents events, ReadCardRequest dataToRead, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.ReadCardCommandEvents.html">ReadCardCommandEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.ReadCardRequest.html">ReadCardRequest</a></td>
+        <td><span class="parametername">dataToRead</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.html">ReadCardResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_ResetDeviceAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ResetDeviceAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_ResetDeviceAsync_XFS4IoTFramework_CardReader_ResetCommandEvents_XFS4IoTFramework_CardReader_ResetDeviceRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.ResetDeviceAsync(XFS4IoTFramework.CardReader.ResetCommandEvents,XFS4IoTFramework.CardReader.ResetDeviceRequest,System.Threading.CancellationToken)">ResetDeviceAsync(ResetCommandEvents, ResetDeviceRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used by the application to perform a hardware reset which will attempt to return the card readerdevice to a known good state.
+This command does not over-ride a lock obtained by another application or service handle.
+If the device is a user ID card unit, the device will attempt to either retain, eject or will perform no action onany user cards found in the device as specified in the input parameter.
+It may not always be possible to retain oreject the items as specified because of hardware problems.
+If a user card is found inside the device the CardReader.MediaInsertedEvent will inform the application where card wasactually moved to.
+If no action is specified the user card will not be moved even if this means that the devicecannot be recovered.
+If the device is a permanent chip card unit, this command will power-off the chip.For devices with parking station capability there will be one MediaInsertedEvent for each card found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResetDeviceResult&gt; ResetDeviceAsync(ResetCommandEvents events, ResetDeviceRequest cardAction, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.ResetCommandEvents.html">ResetCommandEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.ResetDeviceRequest.html">ResetDeviceRequest</a></td>
+        <td><span class="parametername">cardAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ResetDeviceResult.html">ResetDeviceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_SetCIM86KeyAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.SetCIM86KeyAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_SetCIM86KeyAsync_XFS4IoTFramework_CardReader_SetCIM86KeyRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.SetCIM86KeyAsync(XFS4IoTFramework.CardReader.SetCIM86KeyRequest,System.Threading.CancellationToken)">SetCIM86KeyAsync(SetCIM86KeyRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used for setting the DES key that is necessary for operating a CIM86 module.
+The command must beexecuted before the first read command is issued to the card reader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SetCIM86KeyResult&gt; SetCIM86KeyAsync(SetCIM86KeyRequest keyInfo, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.SetCIM86KeyRequest.html">SetCIM86KeyRequest</a></td>
+        <td><span class="parametername">keyInfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.SetCIM86KeyResult.html">SetCIM86KeyResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ICardReaderDevice_WriteCardAsync_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.WriteCardAsync*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ICardReaderDevice_WriteCardAsync_XFS4IoTFramework_CardReader_CommonCardCommandEvents_XFS4IoTFramework_CardReader_WriteCardRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.CardReader.ICardReaderDevice.WriteCardAsync(XFS4IoTFramework.CardReader.CommonCardCommandEvents,XFS4IoTFramework.CardReader.WriteCardRequest,System.Threading.CancellationToken)">WriteCardAsync(CommonCardCommandEvents, WriteCardRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The device is ready to accept a card.
+The application must pass the magnetic stripe data in ASCII without any sentinels.
+If the data passed in is too long. The invalidError error code will be returned.
+This procedure is followed by data verification.
+If power fails during a write the outcome of the operation will be vendor specific, there is no guarantee that thewrite will have succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;WriteCardResult&gt; WriteCardAsync(CommonCardCommandEvents events, WriteCardRequest dataToWrite, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.CommonCardCommandEvents.html">CommonCardCommandEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.CardReader.WriteCardRequest.html">WriteCardRequest</a></td>
+        <td><span class="parametername">dataToWrite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.WriteCardResult.html">WriteCardResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

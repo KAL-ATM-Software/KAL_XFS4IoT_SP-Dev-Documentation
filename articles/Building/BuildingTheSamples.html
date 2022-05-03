@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Building the SP-Dev Samples | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Building the SP-Dev Samples | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="building-the-sp-dev-samples">Building the SP-Dev Samples</h1>
+
+<h2 id="using-the-samples-repository">Using the Samples Repository</h2>
+<p>The C# sample references the Framework NuGet packages available <a href="https://www.nuget.org/profiles/KAL-ATM-Software">here</a>.</p>
+<p>The C++/CLI sample uses a direct reference to the Dlls within <code>DevicesCpp/SampleCardReader/References32</code> taken from the NuGet packages.</p>
+<h2 id="building-the-c-sample-simulator">Building the C# sample simulator</h2>
+<ol>
+<li>Clone KAL_XFS4IoT_SP-Dev-Samples repository from <a href="https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev-Samples">https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev-Samples</a>.</li>
+<li>Install Visual Studio 2022 and .Net6 SDK or runtime.</li>
+<li>Make sure online nuget package source is configured. Menu-&gt;Tools-&gt;NuGet Package Manager-&gt;Package Manager Settings-&gt;Package Sources has online location <a href="https://api.nuget.org/v3/index.json">https://api.nuget.org/v3/index.json</a>. For offline environment, all XFS4IoT framework NuGet packages need to be downloaded first and point offline location where the downloaded packages are stored locally in the package manager settings. The nuget packages are availble from KAL_XFS4IoT_SP-Dev repositry. <a href="https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev/releases">https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev/releases</a></li>
+<li>Open the solution <code>Devices/SPs.sln</code> in Visual Studio 2022.</li>
+<li>Select Solution SPs in the solution explorer and execute Clean Solution.</li>
+<li>Select Solution SPs in the solution explorer and execute Rebuild Solution.</li>
+<li>Build complete both projects without errors.</li>
+<li>Binaries are created under <code>Devices/bin/Debug/net6.0-windows7.0</code> or <code>Release/net6.0-windows7.0</code>.</li>
+<li>The SP executable <strong>XFS4IoT.SP.ServerHostSample.exe</strong> is created. The executable has dependencies with other DLLs created in the same folder.</li>
+<li>The default IP address is the local host 127.0.0.0. If the SP and client application run on the same machine, no configuration changes are required. If the IP address needs to be changed it can be done so remotely with the client application from different machine as follows:
+<ol>
+<li>Open the configuration file of the SP, <em><strong>XFS4IoT.SP.ServerHostSample.dll.config</strong></em>, in the test file editor, for example VS Code.</li>
+<li>Change value of the <code>ServerAddress</code> key.<br>
+<code>&lt;add key=&quot;ServerAddressUri&quot; value=&quot;**http://xxx.xxx.xxx.xxx**&quot; /&gt;</code></li>
+</ol>
+</li>
+<li>Run XFS4IoT.SP.ServerHostSample.exe.</li>
+</ol>
+<h2 id="building-the-sample-client-application">Building the sample client application</h2>
+<ol>
+<li>Clone KAL_XFS4IoT_SP-Dev-Samples repository from <a href="https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev-Samples">https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev-Samples</a>.</li>
+<li>Install Visual Studio 2022 and .Net6 SDK or runtime.</li>
+<li>Make sure online nuget package source is configured. Menu-&gt;Tools-&gt;NuGet Package Manager-&gt;Package Manager Settings-&gt;Package Sources has online location <a href="https://api.nuget.org/v3/index.json">https://api.nuget.org/v3/index.json</a>. For offline environment, all XFS4IoT framework NuGet packages need to be downloaded first and point offline location where the downloaded packages are stored locally in the package manager settings. The nuget packages are availble from KAL_XFS4IoT_SP-Dev repositry. <a href="https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev/releases">https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev/releases</a></li>
+<li>Open the solution <code>ClientTestApp/ClientTestApp.sln</code> in Visual Studio 2022.</li>
+<li>Select ClientTestApp in the solution explorer and execute Clean Solution.</li>
+<li>Select ClientTestApp in the solution explorer and execute Rebuild Solution.</li>
+<li>Build complete both projects without errors.</li>
+<li>Binaries are created under <code>ClientTestApp/bin/Debug/net6.0-windows</code> or <code>Release/net6.0-windows</code>.</li>
+<li>The SP executable <strong>TestClientForms.exe</strong> is created. The executable has dependencies with other DLLs created in the same folder.</li>
+<li>Run <strong>TestClientForms.exe</strong></li>
+<li>The default IP address is the local host 127.0.0.1. If the SP and client application run on the same machine, no configuration changes are required.<br>
+If the SP and client application run on the different machines, change the Service URL on the top left of GUI. i.e. <strong>ws://xxx.xxx.xxx.xxx</strong> where the SP is running.</li>
+<li>Click the Service Discovery button.<br>
+The CardReader URL is displayed if the connection is established with the SP.</li>
+<li>The test application can communicate with the CardReader SP.</li>
+</ol>
+<h2 id="building-the-ccli-sample-simulator">Building the C++/CLI sample simulator</h2>
+<ol>
+<li>Clone KAL_XFS4IoT_SP-Dev-Samples repository from <a href="https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev-Samples">https://github.com/KAL-ATM-Software/KAL_XFS4IoT_SP-Dev-Samples</a>.</li>
+<li>Install Visual Studio 2019 with C++/CLI component and .Net5 SDK or runtime.</li>
+<li>Open the solution <code>DevicesCpp/SPsCpp.sln</code> in Visual Studio 2019.</li>
+<li>Select SPsCpp in the solution explorer and execute Clean Solution.</li>
+<li>Select SPsCpp in the solution explorer and execute Rebuild Solution.</li>
+<li>Build complete both projects without errors.</li>
+<li>Binaries are created under <code>DevicesCpp/bin/Debug/net5.0-windows7.0</code> or <code>DevicesCpp/bin/Release/net5.0-windows</code>.</li>
+<li>The SP executable <strong>XFS4IoT.SP.ServerHostSample.exe</strong> is created. The executable has dependencies with other DLLs created in the same folder.</li>
+<li>The default IP address is the local host 127.0.0.0. If the SP and client application run on the same machine, no configuration changes are required. If the IP address needs to be changed it can be done so remotely with the client application from different machine as follows:
+<ol>
+<li>Open the configuration file of the SP, <em><strong>XFS4IoT.SP.ServerHostSample.dll.config</strong></em>, in the test file editor, for example VS Code.</li>
+<li>Change value of the <code>ServerAddress</code> key.<br>
+<code>&lt;add key=&quot;ServerAddressUri&quot; value=&quot;**http://xxx.xxx.xxx.xxx**&quot; /&gt;</code></li>
+</ol>
+</li>
+<li>Run XFS4IoT.SP.ServerHostSample.exe.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBiometricDevice
+   | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBiometricDevice
+   | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice">
+  
+  
+  <h1 id="XFS4IoTFramework_Biometric_IBiometricDevice" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice" class="text-break">Interface IBiometricDevice
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoTServer.IDevice.html#XFS4IoTServer_IDevice_RunAsync">IDevice.RunAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.IDevice.html#XFS4IoTServer_IDevice_SetServiceProvider">IDevice.SetServiceProvider</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTFramework.Biometric.html">XFS4IoTFramework.Biometric</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Biometric.dll</h6>
+  <h5 id="XFS4IoTFramework_Biometric_IBiometricDevice_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBiometricDevice : IDevice</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_BiometricCapabilities_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.BiometricCapabilities*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_BiometricCapabilities" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.BiometricCapabilities">BiometricCapabilities</h4>
+  <div class="markdown level1 summary"><p>Biometric Capabilities</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BiometricCapabilitiesClass BiometricCapabilities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.BiometricCapabilitiesClass.html">BiometricCapabilitiesClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_BiometricStatus_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.BiometricStatus*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_BiometricStatus" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.BiometricStatus">BiometricStatus</h4>
+  <div class="markdown level1 summary"><p>Biometric Status</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BiometricStatusClass BiometricStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.BiometricStatusClass.html">BiometricStatusClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_StorageInfo_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.StorageInfo*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_StorageInfo" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.StorageInfo">StorageInfo</h4>
+  <div class="markdown level1 summary"><p>BiometricDataTypes stored by the device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, BiometricDataType&gt; StorageInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoTFramework.Biometric.BiometricDataType.html">BiometricDataType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_ClearAsync_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ClearAsync*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_ClearAsync_XFS4IoTFramework_Biometric_ClearDataRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ClearAsync(XFS4IoTFramework.Biometric.ClearDataRequest,System.Threading.CancellationToken)">ClearAsync(ClearDataRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>|-  This command can be used to clear stored data. In the case where there is no stored data to clear this command completes with Success.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeviceResult&gt; ClearAsync(ClearDataRequest ClearMode, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Biometric.ClearDataRequest.html">ClearDataRequest</a></td>
+        <td><span class="parametername">ClearMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTServer.DeviceResult.html">DeviceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_ImportAsync_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ImportAsync*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_ImportAsync_XFS4IoTFramework_Biometric_ImportRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ImportAsync(XFS4IoTFramework.Biometric.ImportRequest,System.Threading.CancellationToken)">ImportAsync(ImportRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command imports a list of biometric template data structures into the device for later comparison with biometric datascanned using the <a href="#biometric.read">Biometric.Read</a>. Normally this data is read from the chip on a customer’s card or provided by the host system. Data that has been imported is available until a <a href="#biometric.clear">Biometric.Clear</a> is called. If template data has been previously imported using a call to <a href="#biometric.import">Biometric.Import</a>, then it is overwritten. This data is not persistent across power fails.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ImportResult&gt; ImportAsync(ImportRequest request, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Biometric.ImportRequest.html">ImportRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.Biometric.ImportResult.html">ImportResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_MatchAsync_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.MatchAsync*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_MatchAsync_XFS4IoTFramework_Biometric_MatchRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.MatchAsync(XFS4IoTFramework.Biometric.MatchRequest,System.Threading.CancellationToken)">MatchAsync(MatchRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: &quot;../Docs/MatchDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MatchResult&gt; MatchAsync(MatchRequest request, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Biometric.MatchRequest.html">MatchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.Biometric.MatchResult.html">MatchResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_ReadAsync_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ReadAsync*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_ReadAsync_XFS4IoTFramework_Biometric_ReadRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ReadAsync(XFS4IoTFramework.Biometric.ReadRequest,System.Threading.CancellationToken)">ReadAsync(ReadRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command enables the device for biometric scanning, then captures and optionally returns biometric data. A <a href="#biometric.presentsubjectevent">Biometric.PresentSubjectEvent</a> will be sent to notify the client when it is ready to begin scanning and a <a href="#biometric.subjectdetectedevent">Biometric.SubjectDetectedEvent</a> sent for each scanning attempt. The <em>numCaptures</em> input parameter specifies how many captures should be attempted, unless it is zero in which case the device itself will determine this. Once this command has successfully captured biometric raw data it will complete with Success.The <a href="#biometric.read">Biometric.Read</a> command has two purposes:<strong>Scanning</strong>: The biometric data that is captured into the device can be processed into biometric template data and returned as an output parameter for enrollment or storage elsewhere, e.g. on a server or smart card.<strong>Matching</strong>: The biometric data that is captured into the device can be used for subsequent matching. Once data has been scanned into the device it can be compared to existing biometric templates that have been imported using the <a href="#biometric.import">Biometric.Import</a> in order to allow verification or identification of an individual. The <a href="#common.capabilities.completion.properties.biometric.matchsupported">matchSupported</a> capability indicates if the <a href="#biometric.match">Biometric.Match</a> can be used for matching, otherwise the matching must be done externally, e.g. on a server or smart card. In either case the data that has been scanned into the device will be persistent according to the current persistence mode as reported by the <em>dataPersistence</em> status property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ReadResult&gt; ReadAsync(ReadRequest request, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Biometric.ReadRequest.html">ReadRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.Biometric.ReadResult.html">ReadResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_ResetDeviceAsync_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ResetDeviceAsync*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_ResetDeviceAsync_XFS4IoTFramework_Biometric_ClearDataRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.ResetDeviceAsync(XFS4IoTFramework.Biometric.ClearDataRequest,System.Threading.CancellationToken)">ResetDeviceAsync(ClearDataRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>|-  This command is used by the client to perform a hardware reset which will attempt to return the biometric device to a known good state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeviceResult&gt; ResetDeviceAsync(ClearDataRequest ClearMode, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Biometric.ClearDataRequest.html">ClearDataRequest</a></td>
+        <td><span class="parametername">ClearMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTServer.DeviceResult.html">DeviceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_SetDataPersistenceAsync_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.SetDataPersistenceAsync*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_SetDataPersistenceAsync_XFS4IoTFramework_Common_BiometricCapabilitiesClass_PersistenceModesEnum_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.SetDataPersistenceAsync(XFS4IoTFramework.Common.BiometricCapabilitiesClass.PersistenceModesEnum,System.Threading.CancellationToken)">SetDataPersistenceAsync(BiometricCapabilitiesClass.PersistenceModesEnum, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used to set the persistence mode. This controls how the biometric data is persisted after a <a href="#biometric.read">Biometric.Read</a>. The data can be persisted for use by subsequent commands, or it can be automatically cleared.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeviceResult&gt; SetDataPersistenceAsync(BiometricCapabilitiesClass.PersistenceModesEnum Mode, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.BiometricCapabilitiesClass.PersistenceModesEnum.html">BiometricCapabilitiesClass.PersistenceModesEnum</a></td>
+        <td><span class="parametername">Mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTServer.DeviceResult.html">DeviceResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_Biometric_IBiometricDevice_SetMatchAsync_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.SetMatchAsync*"></a>
+  <h4 id="XFS4IoTFramework_Biometric_IBiometricDevice_SetMatchAsync_XFS4IoTFramework_Biometric_MatchRequest_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Biometric.IBiometricDevice.SetMatchAsync(XFS4IoTFramework.Biometric.MatchRequest,System.Threading.CancellationToken)">SetMatchAsync(MatchRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used for devices which need to know the match criteria data for the <a href="#biometric.match">Biometric.Match</a> before any biometric scanning is performed by the <a href="#biometric.read">Biometric.Read</a>. The <a href="#biometric.read">Biometric.Read</a> and <a href="#biometric.match">Biometric.Match</a> should be called after this command. For all other devices <a href="#api.messagetypes.completionmessages.completioncodes">unsupportedCommand</a> will be returned here.If the capability <em><a href="#common.capabilities.completion.properties.biometric.matchsupported">matchSupported</a></em> == combinedMatch then this command is mandatory. If it is not called first, the <a href="#biometric.match">Biometric.Match</a> will fail with the generic error <a href="#api.messagetypes.completionmessages.completioncodes">sequenceError</a>. The data set using this command is not persistent across power failures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;SetMatchResult&gt; SetMatchAsync(MatchRequest request, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Biometric.MatchRequest.html">MatchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="XFS4IoTFramework.Biometric.SetMatchResult.html">SetMatchResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

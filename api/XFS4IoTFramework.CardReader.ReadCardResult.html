@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReadCardResult
+   | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReadCardResult
+   | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoTFramework.CardReader.ReadCardResult">
+  
+  
+  <h1 id="XFS4IoTFramework_CardReader_ReadCardResult" data-uid="XFS4IoTFramework.CardReader.ReadCardResult" class="text-break">Class ReadCardResult
+  </h1>
+  <div class="markdown level0 summary"><p>ReadCardResult
+Return result of accepting card, the card data must be cached until ReadCardData method gets called if the firmware command has capability to read card data and accept card</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="XFS4IoTServer.DeviceResult.html">DeviceResult</a></div>
+    <div class="level2"><span class="xref">ReadCardResult</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoTServer.DeviceResult.html#XFS4IoTServer_DeviceResult_CompletionCode">DeviceResult.CompletionCode</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.DeviceResult.html#XFS4IoTServer_DeviceResult_ErrorDescription">DeviceResult.ErrorDescription</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTFramework.CardReader.html">XFS4IoTFramework.CardReader</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.CardReader.dll</h6>
+  <h5 id="XFS4IoTFramework_CardReader_ReadCardResult_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ReadCardResult : DeviceResult</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_MessagePayload_CompletionCodeEnum_System_Collections_Generic_Dictionary_XFS4IoTFramework_CardReader_ReadCardRequest_CardDataTypesEnum_XFS4IoTFramework_CardReader_ReadCardResult_CardData__" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor(MessagePayload.CompletionCodeEnum,System.Collections.Generic.Dictionary{XFS4IoTFramework.CardReader.ReadCardRequest.CardDataTypesEnum,XFS4IoTFramework.CardReader.ReadCardResult.CardData})">ReadCardResult(MessagePayload.CompletionCodeEnum, Dictionary&lt;ReadCardRequest.CardDataTypesEnum, ReadCardResult.CardData&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadCardResult(MessagePayload.CompletionCodeEnum CompletionCode, Dictionary&lt;ReadCardRequest.CardDataTypesEnum, ReadCardResult.CardData&gt; DataRead = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MessagePayload.CompletionCodeEnum</span></td>
+        <td><span class="parametername">CompletionCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardRequest.CardDataTypesEnum.html">ReadCardRequest.CardDataTypesEnum</a>, <a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td><span class="parametername">DataRead</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_MessagePayload_CompletionCodeEnum_System_Collections_Generic_Dictionary_XFS4IoTFramework_CardReader_ReadCardRequest_CardDataTypesEnum_XFS4IoTFramework_CardReader_ReadCardResult_CardData__System_Collections_Generic_List_XFS4IoTFramework_CardReader_ReadCardResult_CardData__" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor(MessagePayload.CompletionCodeEnum,System.Collections.Generic.Dictionary{XFS4IoTFramework.CardReader.ReadCardRequest.CardDataTypesEnum,XFS4IoTFramework.CardReader.ReadCardResult.CardData},System.Collections.Generic.List{XFS4IoTFramework.CardReader.ReadCardResult.CardData})">ReadCardResult(MessagePayload.CompletionCodeEnum, Dictionary&lt;ReadCardRequest.CardDataTypesEnum, ReadCardResult.CardData&gt;, List&lt;ReadCardResult.CardData&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadCardResult(MessagePayload.CompletionCodeEnum CompletionCode, Dictionary&lt;ReadCardRequest.CardDataTypesEnum, ReadCardResult.CardData&gt; DataRead = null, List&lt;ReadCardResult.CardData&gt; ChipATRRead = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MessagePayload.CompletionCodeEnum</span></td>
+        <td><span class="parametername">CompletionCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardRequest.CardDataTypesEnum.html">ReadCardRequest.CardDataTypesEnum</a>, <a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td><span class="parametername">DataRead</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td><span class="parametername">ChipATRRead</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_MessagePayload_CompletionCodeEnum_System_Collections_Generic_List_XFS4IoTFramework_CardReader_ReadCardResult_CardData__" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor(MessagePayload.CompletionCodeEnum,System.Collections.Generic.List{XFS4IoTFramework.CardReader.ReadCardResult.CardData})">ReadCardResult(MessagePayload.CompletionCodeEnum, List&lt;ReadCardResult.CardData&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadCardResult(MessagePayload.CompletionCodeEnum CompletionCode, List&lt;ReadCardResult.CardData&gt; ChipATRRead = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MessagePayload.CompletionCodeEnum</span></td>
+        <td><span class="parametername">CompletionCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td><span class="parametername">ChipATRRead</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ReadCardResult__ctor_MessagePayload_CompletionCodeEnum_System_Nullable_ReadRawDataCompletion_PayloadData_ErrorCodeEnum__System_String_System_Collections_Generic_Dictionary_XFS4IoTFramework_CardReader_ReadCardRequest_CardDataTypesEnum_XFS4IoTFramework_CardReader_ReadCardResult_CardData__System_Collections_Generic_List_XFS4IoTFramework_CardReader_ReadCardResult_CardData__" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.#ctor(MessagePayload.CompletionCodeEnum,System.Nullable{ReadRawDataCompletion.PayloadData.ErrorCodeEnum},System.String,System.Collections.Generic.Dictionary{XFS4IoTFramework.CardReader.ReadCardRequest.CardDataTypesEnum,XFS4IoTFramework.CardReader.ReadCardResult.CardData},System.Collections.Generic.List{XFS4IoTFramework.CardReader.ReadCardResult.CardData})">ReadCardResult(MessagePayload.CompletionCodeEnum, Nullable&lt;ReadRawDataCompletion.PayloadData.ErrorCodeEnum&gt;, String, Dictionary&lt;ReadCardRequest.CardDataTypesEnum, ReadCardResult.CardData&gt;, List&lt;ReadCardResult.CardData&gt;)</h4>
+  <div class="markdown level1 summary"><p>ReadCardResult
+Result of card data read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadCardResult(MessagePayload.CompletionCodeEnum CompletionCode, ReadRawDataCompletion.PayloadData.ErrorCodeEnum? ErrorCode = null, string ErrorDescription = null, Dictionary&lt;ReadCardRequest.CardDataTypesEnum, ReadCardResult.CardData&gt; DataRead = null, List&lt;ReadCardResult.CardData&gt; ChipATRRead = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MessagePayload.CompletionCodeEnum</span></td>
+        <td><span class="parametername">CompletionCode</span></td>
+        <td><p>Generic completion codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">ReadRawDataCompletion.PayloadData.ErrorCodeEnum</span>&gt;</td>
+        <td><span class="parametername">ErrorCode</span></td>
+        <td><p>Command specific error codes</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ErrorDescription</span></td>
+        <td><p>Details of error description</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardRequest.CardDataTypesEnum.html">ReadCardRequest.CardDataTypesEnum</a>, <a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td><span class="parametername">DataRead</span></td>
+        <td><p>Card data read in binary</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td><span class="parametername">ChipATRRead</span></td>
+        <td><p>Read chip ATR received</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ReadCardResult_ChipATRRead_" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.ChipATRRead*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ReadCardResult_ChipATRRead" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.ChipATRRead">ChipATRRead</h4>
+  <div class="markdown level1 summary"><p>Contains the ATR data read from the chip. For contactless chip card readers, multiple identification
+information can be returned if the card reader detects more than one chip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ReadCardResult.CardData&gt; ChipATRRead { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ReadCardResult_DataRead_" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.DataRead*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ReadCardResult_DataRead" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.DataRead">DataRead</h4>
+  <div class="markdown level1 summary"><p>ReadData
+All read card data to be stored except chip ATR</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;ReadCardRequest.CardDataTypesEnum, ReadCardResult.CardData&gt; DataRead { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<a class="xref" href="XFS4IoTFramework.CardReader.ReadCardRequest.CardDataTypesEnum.html">ReadCardRequest.CardDataTypesEnum</a>, <a class="xref" href="XFS4IoTFramework.CardReader.ReadCardResult.CardData.html">ReadCardResult.CardData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTFramework_CardReader_ReadCardResult_ErrorCode_" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.ErrorCode*"></a>
+  <h4 id="XFS4IoTFramework_CardReader_ReadCardResult_ErrorCode" data-uid="XFS4IoTFramework.CardReader.ReadCardResult.ErrorCode">ErrorCode</h4>
+  <div class="markdown level1 summary"><p>ErrorCode
+This error code is set if the operation is failed, otherwise omitted</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadRawDataCompletion.PayloadData.ErrorCodeEnum? ErrorCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">ReadRawDataCompletion.PayloadData.ErrorCodeEnum</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
