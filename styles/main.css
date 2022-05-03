@@ -2,3 +2,21 @@
 {
     background-color: #20364E;
 }
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text 
+{
+    color: #cfcfcf;
+}
+
+.navbar-brand>img 
+{
+    display: block;
+    margin-right: 1rem;
+}
+
+img#logo
+{
+    width: 82px;
+    position: relative;
+    top: 3px;
+}
