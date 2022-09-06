@@ -104,13 +104,13 @@ endpoint, and managing services.</p>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Dispatch_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_">CommandDispatcher.Dispatch(IConnection, MessageBase)</a>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Dispatch_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_System_Threading_CancellationToken_">CommandDispatcher.Dispatch(IConnection, MessageBase, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_DispatchError_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_System_Exception_">CommandDispatcher.DispatchError(IConnection, MessageBase, Exception)</a>
     </div>
     <div>
-      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__">CommandDispatcher.CancelCommandsAsync(IConnection, List&lt;Int32&gt;)</a>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__System_Threading_CancellationToken_">CommandDispatcher.CancelCommandsAsync(IConnection, List&lt;Int32&gt;, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Commands">CommandDispatcher.Commands</a>
@@ -151,13 +151,13 @@ endpoint, and managing services.</p>
   
   
   <a id="XFS4IoTServer_ServicePublisher__ctor_" data-uid="XFS4IoTServer.ServicePublisher.#ctor*"></a>
-  <h4 id="XFS4IoTServer_ServicePublisher__ctor_XFS4IoT_ILogger_" data-uid="XFS4IoTServer.ServicePublisher.#ctor(XFS4IoT.ILogger)">ServicePublisher(ILogger)</h4>
+  <h4 id="XFS4IoTServer_ServicePublisher__ctor_XFS4IoT_ILogger_XFS4IoTServer_IServiceConfiguration_" data-uid="XFS4IoTServer.ServicePublisher.#ctor(XFS4IoT.ILogger,XFS4IoTServer.IServiceConfiguration)">ServicePublisher(ILogger, IServiceConfiguration)</h4>
   <div class="markdown level1 summary"><p>A new service publisher.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ServicePublisher(ILogger Logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public ServicePublisher(ILogger Logger, IServiceConfiguration serviceConfiguration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -175,9 +175,15 @@ endpoint, and managing services.</p>
         <td><p>To use for all logging</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.IServiceConfiguration.html">IServiceConfiguration</a></td>
+        <td><span class="parametername">serviceConfiguration</span></td>
+        <td><p>To get service configuration</p>
+</td>
+      </tr>
     </tbody>
   </table>
-  <h5 id="XFS4IoTServer_ServicePublisher__ctor_XFS4IoT_ILogger__remarks">Remarks</h5>
+  <h5 id="XFS4IoTServer_ServicePublisher__ctor_XFS4IoT_ILogger_XFS4IoTServer_IServiceConfiguration__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The new service publisher will automatically bind to the next available port
 (as defined by XFS4IoT.)</p>
 </div>
@@ -468,13 +474,30 @@ endpoint, and managing services.</p>
   
   
   <a id="XFS4IoTServer_ServicePublisher_RunAsync_" data-uid="XFS4IoTServer.ServicePublisher.RunAsync*"></a>
-  <h4 id="XFS4IoTServer_ServicePublisher_RunAsync" data-uid="XFS4IoTServer.ServicePublisher.RunAsync">RunAsync()</h4>
+  <h4 id="XFS4IoTServer_ServicePublisher_RunAsync_XFS4IoTServer_CancellationSource_" data-uid="XFS4IoTServer.ServicePublisher.RunAsync(XFS4IoTServer.CancellationSource)">RunAsync(CancellationSource)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override async Task RunAsync()</code></pre>
+    <pre><code class="lang-csharp hljs">public override async Task RunAsync(CancellationSource cancellationSource)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.CancellationSource.html">CancellationSource</a></td>
+        <td><span class="parametername">cancellationSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -491,7 +514,7 @@ endpoint, and managing services.</p>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_RunAsync">CommandDispatcher.RunAsync()</a></div>
+  <div><a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_RunAsync_XFS4IoTServer_CancellationSource_">CommandDispatcher.RunAsync(CancellationSource)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="XFS4IoTServer.IServiceProvider.html">IServiceProvider</a>
@@ -507,16 +530,16 @@ endpoint, and managing services.</p>
       <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, String, String)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String, String)</a>
   </div>
   <div>
       <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(Object, String, String)</a>
   </div>
 </article>
           </div>

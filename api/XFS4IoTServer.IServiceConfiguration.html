@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Enum GetTransactionStateResult.StateEnum
+    <title>Interface IServiceConfiguration
    | XFS4IoT-SP-Dev </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum GetTransactionStateResult.StateEnum
+    <meta name="title" content="Interface IServiceConfiguration
    | XFS4IoT-SP-Dev ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -80,52 +80,82 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="XFS4IoTFramework.Common.GetTransactionStateResult.StateEnum">
+            <article class="content wrap" id="_content" data-uid="XFS4IoTServer.IServiceConfiguration">
   
   
-  <h1 id="XFS4IoTFramework_Common_GetTransactionStateResult_StateEnum" data-uid="XFS4IoTFramework.Common.GetTransactionStateResult.StateEnum" class="text-break">Enum GetTransactionStateResult.StateEnum
+  <h1 id="XFS4IoTServer_IServiceConfiguration" data-uid="XFS4IoTServer.IServiceConfiguration" class="text-break">Interface IServiceConfiguration
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTFramework.Common.html">XFS4IoTFramework.Common</a></h6>
-  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Common.dll</h6>
-  <h5 id="XFS4IoTFramework_Common_GetTransactionStateResult_StateEnum_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTServer.html">XFS4IoTServer</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Server.dll</h6>
+  <h5 id="XFS4IoTServer_IServiceConfiguration_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum StateEnum</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IServiceConfiguration</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="XFS4IoTServer_IServiceConfiguration_Get_" data-uid="XFS4IoTServer.IServiceConfiguration.Get*"></a>
+  <h4 id="XFS4IoTServer_IServiceConfiguration_Get_System_String_" data-uid="XFS4IoTServer.IServiceConfiguration.Get(System.String)">Get(String)</h4>
+  <div class="markdown level1 summary"><p>Get configuration value associated with the key specified.
+Returns null if specified value doesn't exist in the configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Get(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
+        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       <tr>
-        <td id="XFS4IoTFramework_Common_GetTransactionStateResult_StateEnum_Active">Active</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="XFS4IoTFramework_Common_GetTransactionStateResult_StateEnum_Inactive">Inactive</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="XFS4IoTFramework_Common_GetTransactionStateResult_StateEnum_None">None</td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of the configuration value</p>
+</td>
       </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Configuration value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;GetTransactionStateResult.StateEnum&gt;(Boolean, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;GetTransactionStateResult.StateEnum&gt;()</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, String, String)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(Object, String, String)</a>
   </div>
 </article>
           </div>

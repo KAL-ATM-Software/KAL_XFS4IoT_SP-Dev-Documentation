@@ -88,12 +88,18 @@
 <li>Run <code>dotnet new --install KAL.XFS4IoT.SP-Dev.Framework.Templates</code> to install the SP-Dev project templates.</li>
 </ol>
 <p>The templates will now be available from Visual Studio 2022 and through the .Net CLI.</p>
+<h2 id="updating-installed-templates">Updating installed templates</h2>
+<ol>
+<li>Run <code>dotnet new --update-check</code> to check for updates to installed template packages.</li>
+<li>Use <code>dotnet new --update-apply</code> to apply updates for all listed packages.</li>
+<li>Or use <code>dotnet new --install KAL.XFS4IoT.SP-Dev.Framework.Templates::&lt;version&gt;</code> to update only the SP-Dev templates. For example <code>dotnet new --install KAL.XFS4IoT.SP-Dev.Framework.Templates::1.3.0</code></li>
+</ol>
 <h2 id="using-the-templates-in-visual-studio">Using the templates in Visual Studio</h2>
 <p>After installing the templates, they will now be visible in the VisualStudio &quot;Create a new project&quot; UI.</p>
 <p><img src="../images/Template-VS.png" alt="Visual Studio Create Project"></p>
 <h2 id="using-the-templates-from-net-cli">Using the templates from .Net CLI.</h2>
 <p>The following command can be used to create a new CardReader project:</p>
-<p><code>dotnet new spdev-cr</code></p>
+<p><code>dotnet new spdev-crd</code></p>
 <p>By default it will use the current directory name as the project name, and create the project files in the current directory. See <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new">here</a> for more information on using the <code>dotnet new</code> command.</p>
 <h2 id="uninstalling-the-templates">Uninstalling the templates</h2>
 <ol>

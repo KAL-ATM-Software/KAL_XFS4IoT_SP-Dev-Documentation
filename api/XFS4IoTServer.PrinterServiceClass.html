@@ -197,32 +197,6 @@
   </table>
   
   
-  <a id="XFS4IoTServer_PrinterServiceClass_Medias_" data-uid="XFS4IoTServer.PrinterServiceClass.Medias*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceClass_Medias" data-uid="XFS4IoTServer.PrinterServiceClass.Medias">Medias</h4>
-  <div class="markdown level1 summary"><p>The key value pair of media name and media class representing XFS media</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, Media&gt; Medias { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoTFramework.Printer.Media.html">Media</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="XFS4IoTServer_PrinterServiceClass_PrintJob_" data-uid="XFS4IoTServer.PrinterServiceClass.PrintJob*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceClass_PrintJob" data-uid="XFS4IoTServer.PrinterServiceClass.PrintJob">PrintJob</h4>
   <div class="markdown level1 summary"><p>Job containing print tasks that have not been flushed.
@@ -288,6 +262,62 @@ The printer service stores all printing in this KXPrintJob until the application
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="XFS4IoTServer_PrinterServiceClass_GetBitmapPrintDimensions_" data-uid="XFS4IoTServer.PrinterServiceClass.GetBitmapPrintDimensions*"></a>
+  <h4 id="XFS4IoTServer_PrinterServiceClass_GetBitmapPrintDimensions_XFS4IoTFramework_Printer_PrintTask_System_Int32__System_Int32__" data-uid="XFS4IoTServer.PrinterServiceClass.GetBitmapPrintDimensions(XFS4IoTFramework.Printer.PrintTask,System.Int32@,System.Int32@)">GetBitmapPrintDimensions(PrintTask, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>This method can be called in the device class to obtain the dimensions of a task object when printed using PrintToImage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBitmapPrintDimensions(PrintTask task, out int width, out int height)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Printer.PrintTask.html">PrintTask</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>Task to print data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of rectangle needed to contain the task</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of rectangle needed to contain the task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -759,6 +789,66 @@ The printer service stores all printing in this KXPrintJob until the application
   </table>
   
   
+  <a id="XFS4IoTServer_PrinterServiceClass_PrintToBitmap_" data-uid="XFS4IoTServer.PrinterServiceClass.PrintToBitmap*"></a>
+  <h4 id="XFS4IoTServer_PrinterServiceClass_PrintToBitmap_XFS4IoTFramework_Printer_PrintJobClass_System_Int32_System_Boolean_XFS4IoTFramework_Printer_ImageInfo__" data-uid="XFS4IoTServer.PrinterServiceClass.PrintToBitmap(XFS4IoTFramework.Printer.PrintJobClass,System.Int32,System.Boolean,XFS4IoTFramework.Printer.ImageInfo@)">PrintToBitmap(PrintJobClass, Int32, Boolean, out ImageInfo)</h4>
+  <div class="markdown level1 summary"><p>The method can convert print job to a single image that can be sent to the printer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrintToBitmap(PrintJobClass job, int bitCount, bool UpsideDown, out ImageInfo imageInfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Printer.PrintJobClass.html">PrintJobClass</a></td>
+        <td><span class="parametername">job</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">bitCount</span></td>
+        <td><p>Bits per pixel in returned data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">UpsideDown</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Printer.ImageInfo.html">ImageInfo</a></td>
+        <td><span class="parametername">imageInfo</span></td>
+        <td><p>Information image created</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="XFS4IoTServer_PrinterServiceClass_RetractBinStatusEvent_" data-uid="XFS4IoTServer.PrinterServiceClass.RetractBinStatusEvent*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceClass_RetractBinStatusEvent_XFS4IoT_Printer_Events_RetractBinStatusEvent_PayloadData_" data-uid="XFS4IoTServer.PrinterServiceClass.RetractBinStatusEvent(XFS4IoT.Printer.Events.RetractBinStatusEvent.PayloadData)">RetractBinStatusEvent(XFS4IoT.Printer.Events.RetractBinStatusEvent.PayloadData)</h4>
   <div class="markdown level1 summary"></div>
@@ -898,16 +988,16 @@ The printer service stores all printing in this KXPrintJob until the application
       <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_">Contracts.IsNull&lt;T&gt;(T, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, String, String)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String, String)</a>
   </div>
   <div>
       <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_">Contracts.IsA&lt;T&gt;(Object, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(Object, String, String)</a>
   </div>
 </article>
           </div>

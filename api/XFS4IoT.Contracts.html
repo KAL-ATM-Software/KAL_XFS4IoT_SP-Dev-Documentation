@@ -170,13 +170,13 @@ So for unit tests, where the stack needs to be predicable, set this to false.</p
   
   
   <a id="XFS4IoT_Contracts_Assert_" data-uid="XFS4IoT.Contracts.Assert*"></a>
-  <h4 id="XFS4IoT_Contracts_Assert_System_Boolean_System_String_" data-uid="XFS4IoT.Contracts.Assert(System.Boolean,System.String)">Assert(Boolean, String)</h4>
+  <h4 id="XFS4IoT_Contracts_Assert_System_Boolean_System_String_System_String_" data-uid="XFS4IoT.Contracts.Assert(System.Boolean,System.String,System.String)">Assert(Boolean, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert that the given expression is true.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Assert(bool Predicate, string Message = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Assert(bool Predicate, string Message = null, string expression = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -198,6 +198,12 @@ So for unit tests, where the stack needs to be predicable, set this to false.</p
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">Message</span></td>
         <td><p>Message to report in error reporting</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td><p>Predicate expression this method is called with. Filled in by the compiler automatically.</p>
 </td>
       </tr>
     </tbody>
@@ -451,13 +457,13 @@ For example,</p>
   
   
   <a id="XFS4IoT_Contracts_IsA_" data-uid="XFS4IoT.Contracts.IsA*"></a>
-  <h4 id="XFS4IoT_Contracts_IsA__1_System_Object_System_String_" data-uid="XFS4IoT.Contracts.IsA``1(System.Object,System.String)">IsA&lt;T&gt;(Object, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsA``1(System.Object,System.String,System.String)">IsA&lt;T&gt;(Object, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert object is specified type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T IsA&lt;T&gt;(this object o, string message = &quot;Value is incorrect type&quot;)
+    <pre><code class="lang-csharp hljs">public static T IsA&lt;T&gt;(this object o, string message = null, string expression = null)
     where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -478,6 +484,11 @@ For example,</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -515,13 +526,13 @@ For example,</p>
   
   
   <a id="XFS4IoT_Contracts_IsFalse_" data-uid="XFS4IoT.Contracts.IsFalse*"></a>
-  <h4 id="XFS4IoT_Contracts_IsFalse_System_Boolean_System_String_" data-uid="XFS4IoT.Contracts.IsFalse(System.Boolean,System.String)">IsFalse(Boolean, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsFalse_System_Boolean_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsFalse(System.Boolean,System.String,System.String)">IsFalse(Boolean, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert value must be false</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsFalse(this bool v, string message = &quot;Value should be false&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsFalse(this bool v, string message = null, string expression = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -541,6 +552,11 @@ For example,</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -563,13 +579,13 @@ For example,</p>
   
   
   <a id="XFS4IoT_Contracts_IsNotNull_" data-uid="XFS4IoT.Contracts.IsNotNull*"></a>
-  <h4 id="XFS4IoT_Contracts_IsNotNull_System_Object_System_String_" data-uid="XFS4IoT.Contracts.IsNotNull(System.Object,System.String)">IsNotNull(Object, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsNotNull_System_Object_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNotNull(System.Object,System.String,System.String)">IsNotNull(Object, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert value must be not null</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void IsNotNull(object v, string Message = &quot;Value should not be null&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void IsNotNull(object v, string Message = null, string expression = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -591,19 +607,24 @@ For example,</p>
         <td><span class="parametername">Message</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="XFS4IoT_Contracts_IsNotNull_" data-uid="XFS4IoT.Contracts.IsNotNull*"></a>
-  <h4 id="XFS4IoT_Contracts_IsNotNull__1___0_System_String_" data-uid="XFS4IoT.Contracts.IsNotNull``1(``0,System.String)">IsNotNull&lt;T&gt;(T, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNotNull``1(``0,System.String,System.String)">IsNotNull&lt;T&gt;(T, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert value must be not null</p>
 <pre><code>    var x = MyValue.IsNotNull().MyProperty; </code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(this T v, string message = &quot;Value should not be null&quot;)
+    <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(this T v, string message = null, string expression = null)
     where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -624,6 +645,11 @@ For example,</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -661,14 +687,14 @@ For example,</p>
   
   
   <a id="XFS4IoT_Contracts_IsNotNull_" data-uid="XFS4IoT.Contracts.IsNotNull*"></a>
-  <h4 id="XFS4IoT_Contracts_IsNotNull__1_System_Nullable___0__System_String_" data-uid="XFS4IoT.Contracts.IsNotNull``1(System.Nullable{``0},System.String)">IsNotNull&lt;T&gt;(Nullable&lt;T&gt;, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsNotNull__1_System_Nullable___0__System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNotNull``1(System.Nullable{``0},System.String,System.String)">IsNotNull&lt;T&gt;(Nullable&lt;T&gt;, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert value must be not null</p>
 <pre><code>    var x = MyValue.IsNotNull().MyProperty; </code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(this T? v, string message = &quot;Value should not be null&quot;)
+    <pre><code class="lang-csharp hljs">public static T IsNotNull&lt;T&gt;(this T? v, string message = null, string expression = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -689,6 +715,11 @@ For example,</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -726,13 +757,13 @@ For example,</p>
   
   
   <a id="XFS4IoT_Contracts_IsNotNullOrWhitespace_" data-uid="XFS4IoT.Contracts.IsNotNullOrWhitespace*"></a>
-  <h4 id="XFS4IoT_Contracts_IsNotNullOrWhitespace_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNotNullOrWhitespace(System.String,System.String)">IsNotNullOrWhitespace(String, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsNotNullOrWhitespace_System_String_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNotNullOrWhitespace(System.String,System.String,System.String)">IsNotNullOrWhitespace(String, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert string should not be null or empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string IsNotNullOrWhitespace(this string v, string message = &quot;Value should be a non-empty string&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string IsNotNullOrWhitespace(this string v, string message = null, string expression = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -752,6 +783,11 @@ For example,</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -774,13 +810,13 @@ For example,</p>
   
   
   <a id="XFS4IoT_Contracts_IsNull_" data-uid="XFS4IoT.Contracts.IsNull*"></a>
-  <h4 id="XFS4IoT_Contracts_IsNull_System_Object_System_String_" data-uid="XFS4IoT.Contracts.IsNull(System.Object,System.String)">IsNull(Object, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsNull_System_Object_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNull(System.Object,System.String,System.String)">IsNull(Object, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert value must be null</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void IsNull(object v, string message = &quot;Value should be null&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void IsNull(object v, string message = null, string expression = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -802,18 +838,23 @@ For example,</p>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="XFS4IoT_Contracts_IsNull_" data-uid="XFS4IoT.Contracts.IsNull*"></a>
-  <h4 id="XFS4IoT_Contracts_IsNull__1___0_System_String_" data-uid="XFS4IoT.Contracts.IsNull``1(``0,System.String)">IsNull&lt;T&gt;(T, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNull``1(``0,System.String,System.String)">IsNull&lt;T&gt;(T, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert value must be null</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T IsNull&lt;T&gt;(this T v, string message = &quot;Value should be null&quot;)
+    <pre><code class="lang-csharp hljs">public static T IsNull&lt;T&gt;(this T v, string message = null, string expression = null)
     where T : class</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -834,6 +875,11 @@ For example,</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -871,13 +917,13 @@ For example,</p>
   
   
   <a id="XFS4IoT_Contracts_IsNullOrWhitespace_" data-uid="XFS4IoT.Contracts.IsNullOrWhitespace*"></a>
-  <h4 id="XFS4IoT_Contracts_IsNullOrWhitespace_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNullOrWhitespace(System.String,System.String)">IsNullOrWhitespace(String, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsNullOrWhitespace_System_String_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsNullOrWhitespace(System.String,System.String,System.String)">IsNullOrWhitespace(String, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert string should be null or empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void IsNullOrWhitespace(this string v, string message = &quot;Value should be a null or empty string&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void IsNullOrWhitespace(this string v, string message = null, string expression = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -899,18 +945,23 @@ For example,</p>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   
   
   <a id="XFS4IoT_Contracts_IsTrue_" data-uid="XFS4IoT.Contracts.IsTrue*"></a>
-  <h4 id="XFS4IoT_Contracts_IsTrue_System_Boolean_System_String_" data-uid="XFS4IoT.Contracts.IsTrue(System.Boolean,System.String)">IsTrue(Boolean, String)</h4>
+  <h4 id="XFS4IoT_Contracts_IsTrue_System_Boolean_System_String_System_String_" data-uid="XFS4IoT.Contracts.IsTrue(System.Boolean,System.String,System.String)">IsTrue(Boolean, String, String)</h4>
   <div class="markdown level1 summary"><p>Assert value must be true</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsTrue(this bool v, string message = &quot;Value should be true&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsTrue(this bool v, string message = null, string expression = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -930,6 +981,11 @@ For example,</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">expression</span></td>
         <td></td>
       </tr>
     </tbody>
