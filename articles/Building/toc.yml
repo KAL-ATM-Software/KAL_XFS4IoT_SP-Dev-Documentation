@@ -1,0 +1,4 @@
+- name: Building the SP-Dev Framework
+  href: BuildingTheFramework.md
+- name: Building the SP-Dev Samples
+  href: BuildingTheSamples.md

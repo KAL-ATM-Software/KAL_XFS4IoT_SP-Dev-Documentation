@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Interface IServiceProvider
-   | XFS4IoT-SP-Dev </title>
+ | XFS4IoT-SP-Dev </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IServiceProvider
-   | XFS4IoT-SP-Dev ">
-    <meta name="generator" content="docfx 2.59.2.0">
-    
+ | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+  
+  <meta property="docfx:rel" content="../">
+  
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -35,12 +35,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
-              
+
+
               <a class="navbar-brand" href="../index.html">
               <img id="logo" class="svg" src="https://www.kal.com/images/kal-logo.svg" alt="">
               </a>
-              
+
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -51,7 +51,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -61,7 +61,7 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
@@ -71,7 +71,7 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -81,10 +81,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="XFS4IoTServer.IServiceProvider">
-  
-  
+
+
   <h1 id="XFS4IoTServer_IServiceProvider" data-uid="XFS4IoTServer.IServiceProvider" class="text-break">Interface IServiceProvider
-  </h1>
+</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -99,19 +99,22 @@
       <a class="xref" href="XFS4IoTServer.ICommandDispatcher.html#XFS4IoTServer_ICommandDispatcher_RunAsync_XFS4IoTServer_CancellationSource_">ICommandDispatcher.RunAsync(CancellationSource)</a>
     </div>
     <div>
-      <a class="xref" href="XFS4IoTServer.ICommandDispatcher.html#XFS4IoTServer_ICommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__System_Threading_CancellationToken_">ICommandDispatcher.CancelCommandsAsync(IConnection, List&lt;Int32&gt;, CancellationToken)</a>
+      <a class="xref" href="XFS4IoTServer.ICommandDispatcher.html#XFS4IoTServer_ICommandDispatcher_AnyValidRequestID_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__System_Threading_CancellationToken_">ICommandDispatcher.AnyValidRequestID(IConnection, List&lt;int&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ICommandDispatcher.html#XFS4IoTServer_ICommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__System_Threading_CancellationToken_">ICommandDispatcher.CancelCommandsAsync(IConnection, List&lt;int&gt;, CancellationToken)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTServer.html">XFS4IoTServer</a></h6>
   <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Server.dll</h6>
   <h5 id="XFS4IoTServer_IServiceProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IServiceProvider : ICommandDispatcher</code></pre>
+    <pre><code class="lang- hljs">public interface IServiceProvider : ICommandDispatcher</code></pre>
   </div>
   <h3 id="properties">Properties
-  </h3>
-  
-  
+</h3>
+
+
   <a id="XFS4IoTServer_IServiceProvider_Device_" data-uid="XFS4IoTServer.IServiceProvider.Device*"></a>
   <h4 id="XFS4IoTServer_IServiceProvider_Device" data-uid="XFS4IoTServer.IServiceProvider.Device">Device</h4>
   <div class="markdown level1 summary"><p>The device class the integrates this service with real hardware.</p>
@@ -119,7 +122,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IDevice Device { get; }</code></pre>
+    <pre><code class="lang- hljs">IDevice Device { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,15 +139,15 @@
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="XFS4IoTServer_IServiceProvider_Name_" data-uid="XFS4IoTServer.IServiceProvider.Name*"></a>
   <h4 id="XFS4IoTServer_IServiceProvider_Name" data-uid="XFS4IoTServer.IServiceProvider.Name">Name</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+    <pre><code class="lang- hljs">string Name { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -156,20 +159,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="XFS4IoTServer_IServiceProvider_Uri_" data-uid="XFS4IoTServer.IServiceProvider.Uri*"></a>
   <h4 id="XFS4IoTServer_IServiceProvider_Uri" data-uid="XFS4IoTServer.IServiceProvider.Uri">Uri</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Uri Uri { get; }</code></pre>
+    <pre><code class="lang- hljs">Uri Uri { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,20 +184,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="XFS4IoTServer_IServiceProvider_WSUri_" data-uid="XFS4IoTServer.IServiceProvider.WSUri*"></a>
   <h4 id="XFS4IoTServer_IServiceProvider_WSUri" data-uid="XFS4IoTServer.IServiceProvider.WSUri">WSUri</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Uri WSUri { get; }</code></pre>
+    <pre><code class="lang- hljs">Uri WSUri { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -206,23 +209,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Uri</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
-  </h3>
-  
-  
+</h3>
+
+
   <a id="XFS4IoTServer_IServiceProvider_BroadcastEvent_" data-uid="XFS4IoTServer.IServiceProvider.BroadcastEvent*"></a>
-  <h4 id="XFS4IoTServer_IServiceProvider_BroadcastEvent_System_Collections_Generic_IEnumerable_XFS4IoTServer_IConnection__System_Object_" data-uid="XFS4IoTServer.IServiceProvider.BroadcastEvent(System.Collections.Generic.IEnumerable{XFS4IoTServer.IConnection},System.Object)">BroadcastEvent(IEnumerable&lt;IConnection&gt;, Object)</h4>
+  <h4 id="XFS4IoTServer_IServiceProvider_BroadcastEvent_System_Collections_Generic_IEnumerable_XFS4IoTServer_IConnection__System_Object_" data-uid="XFS4IoTServer.IServiceProvider.BroadcastEvent(System.Collections.Generic.IEnumerable{XFS4IoTServer.IConnection},System.Object)">BroadcastEvent(IEnumerable&lt;IConnection&gt;, object)</h4>
   <div class="markdown level1 summary"><p>Broadcast an unsolicited event to specified connections.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task BroadcastEvent(IEnumerable&lt;IConnection&gt; connections, object payload)</code></pre>
+    <pre><code class="lang- hljs">Task BroadcastEvent(IEnumerable&lt;IConnection&gt; connections, object payload)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -235,13 +238,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="XFS4IoTServer.IConnection.html">IConnection</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="XFS4IoTServer.IConnection.html">IConnection</a>&gt;</td>
         <td><span class="parametername">connections</span></td>
         <td><p>The connections to broadcast to</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">payload</span></td>
         <td><p>The XFS payload for the message</p>
 </td>
@@ -258,21 +261,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+
+
   <a id="XFS4IoTServer_IServiceProvider_BroadcastEvent_" data-uid="XFS4IoTServer.IServiceProvider.BroadcastEvent*"></a>
-  <h4 id="XFS4IoTServer_IServiceProvider_BroadcastEvent_System_Object_" data-uid="XFS4IoTServer.IServiceProvider.BroadcastEvent(System.Object)">BroadcastEvent(Object)</h4>
+  <h4 id="XFS4IoTServer_IServiceProvider_BroadcastEvent_System_Object_" data-uid="XFS4IoTServer.IServiceProvider.BroadcastEvent(System.Object)">BroadcastEvent(object)</h4>
   <div class="markdown level1 summary"><p>Broadcast an unsolicited event to all connections.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task BroadcastEvent(object payload)</code></pre>
+    <pre><code class="lang- hljs">Task BroadcastEvent(object payload)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -285,7 +288,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">payload</span></td>
         <td><p>The XFS payload for the message</p>
 </td>
@@ -302,30 +305,112 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTServer_IServiceProvider_GetMessagesSupported_" data-uid="XFS4IoTServer.IServiceProvider.GetMessagesSupported*"></a>
+  <h4 id="XFS4IoTServer_IServiceProvider_GetMessagesSupported" data-uid="XFS4IoTServer.IServiceProvider.GetMessagesSupported">GetMessagesSupported()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Dictionary&lt;string, MessageTypeInfo&gt; GetMessagesSupported()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="XFS4IoT.MessageTypeInfo.html">MessageTypeInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTServer_IServiceProvider_SetJsonSchemaValidator_" data-uid="XFS4IoTServer.IServiceProvider.SetJsonSchemaValidator*"></a>
+  <h4 id="XFS4IoTServer_IServiceProvider_SetJsonSchemaValidator_XFS4IoTServer_IJsonSchemaValidator_" data-uid="XFS4IoTServer.IServiceProvider.SetJsonSchemaValidator(XFS4IoTServer.IJsonSchemaValidator)">SetJsonSchemaValidator(IJsonSchemaValidator)</h4>
+  <div class="markdown level1 summary"><p>Set JSON schema dependency injection to the services.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">void SetJsonSchemaValidator(IJsonSchemaValidator JsonSchemaValidator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTServer.IJsonSchemaValidator.html">IJsonSchemaValidator</a></td>
+        <td><span class="parametername">JsonSchemaValidator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTServer_IServiceProvider_SetMessagesSupported_" data-uid="XFS4IoTServer.IServiceProvider.SetMessagesSupported*"></a>
+  <h4 id="XFS4IoTServer_IServiceProvider_SetMessagesSupported_System_Collections_Generic_Dictionary_System_String_XFS4IoT_MessageTypeInfo__" data-uid="XFS4IoTServer.IServiceProvider.SetMessagesSupported(System.Collections.Generic.Dictionary{System.String,XFS4IoT.MessageTypeInfo})">SetMessagesSupported(Dictionary&lt;string, MessageTypeInfo&gt;)</h4>
+  <div class="markdown level1 summary"><p>The list of commands and events device class supproted and associated with versions.
+The framework only supports one latest version of commands and events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">void SetMessagesSupported(Dictionary&lt;string, MessageTypeInfo&gt; MessagesSupported)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="XFS4IoT.MessageTypeInfo.html">MessageTypeInfo</a>&gt;</td>
+        <td><span class="parametername">MessagesSupported</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(object, string, string)</a>
   </div>
   <div>
       <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(Object, String, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, bool, string)</a>
   </div>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
@@ -340,7 +425,7 @@
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -348,13 +433,13 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            
-            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+      
+      <span>Created by <strong>KAL ATM Software GmbH</strong></span>
           </div>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>

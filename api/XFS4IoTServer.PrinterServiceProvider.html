@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class PrinterServiceProvider
-   | XFS4IoT-SP-Dev </title>
+ | XFS4IoT-SP-Dev </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PrinterServiceProvider
-   | XFS4IoT-SP-Dev ">
-    <meta name="generator" content="docfx 2.59.2.0">
-    
+ | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx ">
+  
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+  
+  <meta property="docfx:rel" content="../">
+  
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
-        
+
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -35,12 +35,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              
-              
+
+
               <a class="navbar-brand" href="../index.html">
               <img id="logo" class="svg" src="https://www.kal.com/images/kal-logo.svg" alt="">
               </a>
-              
+
             </div>
             <div class="collapse navbar-collapse" id="navbar">
               <form class="navbar-form navbar-right" role="search" id="search">
@@ -51,7 +51,7 @@
             </div>
           </div>
         </nav>
-        
+
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
@@ -61,7 +61,7 @@
         </div>
       </header>
       <div class="container body-content">
-        
+
         <div id="search-results">
           <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
@@ -71,7 +71,7 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
+
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
@@ -81,16 +81,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="XFS4IoTServer.PrinterServiceProvider">
-  
-  
+
+
   <h1 id="XFS4IoTServer_PrinterServiceProvider" data-uid="XFS4IoTServer.PrinterServiceProvider" class="text-break">Class PrinterServiceProvider
-  </h1>
+</h1>
   <div class="markdown level0 summary"><p>Default implimentation of a printer service provider.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><a class="xref" href="XFS4IoTServer.CommandDispatcher.html">CommandDispatcher</a></div>
     <div class="level2"><a class="xref" href="XFS4IoTServer.ServiceProvider.html">ServiceProvider</a></div>
     <div class="level3"><span class="xref">PrinterServiceProvider</span></div>
@@ -120,10 +120,19 @@
       <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_Device">ServiceProvider.Device</a>
     </div>
     <div>
-      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Object_">ServiceProvider.BroadcastEvent(Object)</a>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Object_">ServiceProvider.BroadcastEvent(object)</a>
     </div>
     <div>
-      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Collections_Generic_IEnumerable_XFS4IoTServer_IConnection__System_Object_">ServiceProvider.BroadcastEvent(IEnumerable&lt;IConnection&gt;, Object)</a>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_BroadcastEvent_System_Collections_Generic_IEnumerable_XFS4IoTServer_IConnection__System_Object_">ServiceProvider.BroadcastEvent(IEnumerable&lt;IConnection&gt;, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_SetJsonSchemaValidator_XFS4IoTServer_IJsonSchemaValidator_">ServiceProvider.SetJsonSchemaValidator(IJsonSchemaValidator)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_SetMessagesSupported_System_Collections_Generic_Dictionary_System_String_XFS4IoT_MessageTypeInfo__">ServiceProvider.SetMessagesSupported(Dictionary&lt;string, MessageTypeInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.ServiceProvider.html#XFS4IoTServer_ServiceProvider_GetMessagesSupported">ServiceProvider.GetMessagesSupported()</a>
     </div>
     <div>
       <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Dispatch_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_System_Threading_CancellationToken_">CommandDispatcher.Dispatch(IConnection, MessageBase, CancellationToken)</a>
@@ -132,7 +141,10 @@
       <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_DispatchError_XFS4IoTServer_IConnection_XFS4IoT_MessageBase_System_Exception_">CommandDispatcher.DispatchError(IConnection, MessageBase, Exception)</a>
     </div>
     <div>
-      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__System_Threading_CancellationToken_">CommandDispatcher.CancelCommandsAsync(IConnection, List&lt;Int32&gt;, CancellationToken)</a>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_AnyValidRequestID_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__System_Threading_CancellationToken_">CommandDispatcher.AnyValidRequestID(IConnection, List&lt;int&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_CancelCommandsAsync_XFS4IoTServer_IConnection_System_Collections_Generic_List_System_Int32__System_Threading_CancellationToken_">CommandDispatcher.CancelCommandsAsync(IConnection, List&lt;int&gt;, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_Commands">CommandDispatcher.Commands</a>
@@ -141,32 +153,35 @@
       <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_ServiceClasses">CommandDispatcher.ServiceClasses</a>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
+      <a class="xref" href="XFS4IoTServer.CommandDispatcher.html#XFS4IoTServer_CommandDispatcher_MessagesSupported">CommandDispatcher.MessagesSupported</a>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <span class="xref">System.Object.GetHashCode()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <span class="xref">System.Object.ToString()</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTServer.html">XFS4IoTServer</a></h6>
   <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Printer.dll</h6>
   <h5 id="XFS4IoTServer_PrinterServiceProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PrinterServiceProvider : ServiceProvider, IServiceProvider, ICommandDispatcher, IPrinterService, ICommonService</code></pre>
+    <pre><code class="lang- hljs">public class PrinterServiceProvider : ServiceProvider, IServiceProvider, ICommandDispatcher, IPrinterService, ICommonService</code></pre>
   </div>
   <h5 id="XFS4IoTServer_PrinterServiceProvider_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This represents a service provider for the printer device.
@@ -174,16 +189,17 @@ It's possible to create other service provider types by combining multiple servi
 same way.</p>
 </div>
   <h3 id="constructors">Constructors
-  </h3>
-  
-  
+</h3>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider__ctor_" data-uid="XFS4IoTServer.PrinterServiceProvider.#ctor*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider__ctor_XFS4IoTServer_EndpointDetails_System_String_XFS4IoTServer_IDevice_ILogger_XFS4IoTServer_IPersistentData_" data-uid="XFS4IoTServer.PrinterServiceProvider.#ctor(XFS4IoTServer.EndpointDetails,System.String,XFS4IoTServer.IDevice,ILogger,XFS4IoTServer.IPersistentData)">PrinterServiceProvider(EndpointDetails, String, IDevice, ILogger, IPersistentData)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider__ctor_XFS4IoTServer_EndpointDetails_System_String_XFS4IoTServer_IDevice_XFS4IoT_ILogger_XFS4IoTServer_IPersistentData_" data-uid="XFS4IoTServer.PrinterServiceProvider.#ctor(XFS4IoTServer.EndpointDetails,System.String,XFS4IoTServer.IDevice,XFS4IoT.ILogger,XFS4IoTServer.IPersistentData)">PrinterServiceProvider(EndpointDetails, string, IDevice, ILogger, IPersistentData)</h4>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PrinterServiceProvider(EndpointDetails endpointDetails, string ServiceName, IDevice device, ILogger logger, IPersistentData persistentData)</code></pre>
+    <pre><code class="lang- hljs">public PrinterServiceProvider(EndpointDetails endpointDetails, string ServiceName, IDevice device, ILogger logger, IPersistentData persistentData)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,7 +217,7 @@ same way.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">ServiceName</span></td>
         <td></td>
       </tr>
@@ -211,7 +227,7 @@ same way.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><a class="xref" href="XFS4IoT.ILogger.html">ILogger</a></td>
         <td><span class="parametername">logger</span></td>
         <td></td>
       </tr>
@@ -222,10 +238,15 @@ same way.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="XFS4IoTServer_PrinterServiceProvider__ctor_XFS4IoTServer_EndpointDetails_System_String_XFS4IoTServer_IDevice_XFS4IoT_ILogger_XFS4IoTServer_IPersistentData__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
   <h3 id="properties">Properties
-  </h3>
-  
-  
+</h3>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_CommonCapabilities_" data-uid="XFS4IoTServer.PrinterServiceProvider.CommonCapabilities*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_CommonCapabilities" data-uid="XFS4IoTServer.PrinterServiceProvider.CommonCapabilities">CommonCapabilities</h4>
   <div class="markdown level1 summary"><p>Stores Common interface capabilites internally</p>
@@ -233,7 +254,7 @@ same way.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommonCapabilitiesClass CommonCapabilities { get; set; }</code></pre>
+    <pre><code class="lang- hljs">public CommonCapabilitiesClass CommonCapabilities { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -250,8 +271,13 @@ same way.</p>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_CommonCapabilities_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_CommonStatus_" data-uid="XFS4IoTServer.PrinterServiceProvider.CommonStatus*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_CommonStatus" data-uid="XFS4IoTServer.PrinterServiceProvider.CommonStatus">CommonStatus</h4>
   <div class="markdown level1 summary"><p>Common Status</p>
@@ -259,7 +285,7 @@ same way.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CommonStatusClass CommonStatus { get; set; }</code></pre>
+    <pre><code class="lang- hljs">public CommonStatusClass CommonStatus { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -276,60 +302,13 @@ same way.</p>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="XFS4IoTServer_PrinterServiceProvider_PrinterCapabilities_" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterCapabilities*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_PrinterCapabilities" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterCapabilities">PrinterCapabilities</h4>
-  <div class="markdown level1 summary"><p>Stores Printer interface capabilites internally</p>
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_CommonStatus_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PrinterCapabilitiesClass PrinterCapabilities { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="XFS4IoTFramework.Common.PrinterCapabilitiesClass.html">PrinterCapabilitiesClass</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="XFS4IoTServer_PrinterServiceProvider_PrinterStatus_" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterStatus*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_PrinterStatus" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterStatus">PrinterStatus</h4>
-  <div class="markdown level1 summary"><p>Stores Printer interface status internally</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PrinterStatusClass PrinterStatus { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="XFS4IoTFramework.Common.PrinterStatusClass.html">PrinterStatusClass</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_PrintJob_" data-uid="XFS4IoTServer.PrinterServiceProvider.PrintJob*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_PrintJob" data-uid="XFS4IoTServer.PrinterServiceProvider.PrintJob">PrintJob</h4>
   <div class="markdown level1 summary"><p>Job containing print tasks that have not been flushed.
@@ -338,7 +317,7 @@ The printer service stores all printing in this KXPrintJob until the application
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PrintJobClass PrintJob { get; }</code></pre>
+    <pre><code class="lang- hljs">public PrintJobClass PrintJob { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -355,17 +334,85 @@ The printer service stores all printing in this KXPrintJob until the application
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  
-  
-  <a id="XFS4IoTServer_PrinterServiceProvider_ErrorEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.ErrorEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_ErrorEvent_XFS4IoTFramework_Common_CommonStatusClass_ErrorEventIdEnum_XFS4IoTFramework_Common_CommonStatusClass_ErrorActionEnum_System_String_" data-uid="XFS4IoTServer.PrinterServiceProvider.ErrorEvent(XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum,XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum,System.String)">ErrorEvent(CommonStatusClass.ErrorEventIdEnum, CommonStatusClass.ErrorActionEnum, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_PrintJob_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
+  <a id="XFS4IoTServer_PrinterServiceProvider_PrinterCapabilities_" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterCapabilities*"></a>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_PrinterCapabilities" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterCapabilities">PrinterCapabilities</h4>
+  <div class="markdown level1 summary"><p>Stores Printer interface capabilites internally</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task ErrorEvent(CommonStatusClass.ErrorEventIdEnum EventId, CommonStatusClass.ErrorActionEnum Action, string VendorDescription)</code></pre>
+    <pre><code class="lang- hljs">public PrinterCapabilitiesClass PrinterCapabilities { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.PrinterCapabilitiesClass.html">PrinterCapabilitiesClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_PrinterCapabilities_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
+  <a id="XFS4IoTServer_PrinterServiceProvider_PrinterStatus_" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterStatus*"></a>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_PrinterStatus" data-uid="XFS4IoTServer.PrinterServiceProvider.PrinterStatus">PrinterStatus</h4>
+  <div class="markdown level1 summary"><p>Stores Printer interface status internally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">public PrinterStatusClass PrinterStatus { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Common.PrinterStatusClass.html">PrinterStatusClass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_PrinterStatus_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="XFS4IoTServer_PrinterServiceProvider_ErrorEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.ErrorEvent*"></a>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_ErrorEvent_XFS4IoTFramework_Common_CommonStatusClass_ErrorEventIdEnum_XFS4IoTFramework_Common_CommonStatusClass_ErrorActionEnum_System_String_" data-uid="XFS4IoTServer.PrinterServiceProvider.ErrorEvent(XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum,XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum,System.String)">ErrorEvent(ErrorEventIdEnum, ErrorActionEnum, string)</h4>
+  <div class="markdown level1 summary"><p>Error event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">public Task ErrorEvent(CommonStatusClass.ErrorEventIdEnum EventId, CommonStatusClass.ErrorActionEnum Action, string VendorDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -378,17 +425,17 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum.html">CommonStatusClass.ErrorEventIdEnum</a></td>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.html">CommonStatusClass</a>.<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorEventIdEnum.html">ErrorEventIdEnum</a></td>
         <td><span class="parametername">EventId</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum.html">CommonStatusClass.ErrorActionEnum</a></td>
+        <td><a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.html">CommonStatusClass</a>.<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ErrorActionEnum.html">ErrorActionEnum</a></td>
         <td><span class="parametername">Action</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">VendorDescription</span></td>
         <td></td>
       </tr>
@@ -404,21 +451,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_ErrorEvent_XFS4IoTFramework_Common_CommonStatusClass_ErrorEventIdEnum_XFS4IoTFramework_Common_CommonStatusClass_ErrorActionEnum_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_GetBitmapPrintDimensions_" data-uid="XFS4IoTServer.PrinterServiceProvider.GetBitmapPrintDimensions*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_GetBitmapPrintDimensions_XFS4IoTFramework_Printer_PrintTask_System_Int32__System_Int32__" data-uid="XFS4IoTServer.PrinterServiceProvider.GetBitmapPrintDimensions(XFS4IoTFramework.Printer.PrintTask,System.Int32@,System.Int32@)">GetBitmapPrintDimensions(PrintTask, out Int32, out Int32)</h4>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_GetBitmapPrintDimensions_XFS4IoTFramework_Printer_PrintTask_System_Int32__System_Int32__" data-uid="XFS4IoTServer.PrinterServiceProvider.GetBitmapPrintDimensions(XFS4IoTFramework.Printer.PrintTask,System.Int32@,System.Int32@)">GetBitmapPrintDimensions(PrintTask, out int, out int)</h4>
   <div class="markdown level1 summary"><p>This method can be called in the device class to obtain the dimensions of a task object when printed using PrintToImage</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetBitmapPrintDimensions(PrintTask task, out int width, out int height)</code></pre>
+    <pre><code class="lang- hljs">public bool GetBitmapPrintDimensions(PrintTask task, out int width, out int height)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -437,13 +489,13 @@ The printer service stores all printing in this KXPrintJob until the application
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">width</span></td>
         <td><p>Width of rectangle needed to contain the task</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">height</span></td>
         <td><p>Height of rectangle needed to contain the task</p>
 </td>
@@ -460,13 +512,18 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_GetBitmapPrintDimensions_XFS4IoTFramework_Printer_PrintTask_System_Int32__System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_GetForms_" data-uid="XFS4IoTServer.PrinterServiceProvider.GetForms*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_GetForms" data-uid="XFS4IoTServer.PrinterServiceProvider.GetForms">GetForms()</h4>
   <div class="markdown level1 summary"><p>Return forms loaded</p>
@@ -474,7 +531,7 @@ The printer service stores all printing in this KXPrintJob until the application
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, Form&gt; GetForms()</code></pre>
+    <pre><code class="lang- hljs">public Dictionary&lt;string, Form&gt; GetForms()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -486,13 +543,18 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoTFramework.Printer.Form.html">Form</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="XFS4IoTFramework.Printer.Form.html">Form</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_GetForms_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_GetMedias_" data-uid="XFS4IoTServer.PrinterServiceProvider.GetMedias*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_GetMedias" data-uid="XFS4IoTServer.PrinterServiceProvider.GetMedias">GetMedias()</h4>
   <div class="markdown level1 summary"><p>Return a list of medias loaded</p>
@@ -500,7 +562,7 @@ The printer service stores all printing in this KXPrintJob until the application
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, Media&gt; GetMedias()</code></pre>
+    <pre><code class="lang- hljs">public Dictionary&lt;string, Media&gt; GetMedias()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -512,20 +574,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="XFS4IoTFramework.Printer.Media.html">Media</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="XFS4IoTFramework.Printer.Media.html">Media</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_GetMedias_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_InkThresholdEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.InkThresholdEvent*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_InkThresholdEvent_XFS4IoTFramework_Printer_CommonThresholdStatusEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.InkThresholdEvent(XFS4IoTFramework.Printer.CommonThresholdStatusEnum)">InkThresholdEvent(CommonThresholdStatusEnum)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task InkThresholdEvent(CommonThresholdStatusEnum Status)</code></pre>
+    <pre><code class="lang- hljs">public Task InkThresholdEvent(CommonThresholdStatusEnum Status)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -554,20 +622,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_InkThresholdEvent_XFS4IoTFramework_Printer_CommonThresholdStatusEnum__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_LampThresholdEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.LampThresholdEvent*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_LampThresholdEvent_XFS4IoTFramework_Printer_LampThresholdEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.LampThresholdEvent(XFS4IoTFramework.Printer.LampThresholdEnum)">LampThresholdEvent(LampThresholdEnum)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task LampThresholdEvent(LampThresholdEnum LampThreshold)</code></pre>
+    <pre><code class="lang- hljs">public Task LampThresholdEvent(LampThresholdEnum LampThreshold)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -596,21 +670,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_LampThresholdEvent_XFS4IoTFramework_Printer_LampThresholdEnum__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_LoadDefinition_" data-uid="XFS4IoTServer.PrinterServiceProvider.LoadDefinition*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_LoadDefinition_System_String_System_Boolean_" data-uid="XFS4IoTServer.PrinterServiceProvider.LoadDefinition(System.String,System.Boolean)">LoadDefinition(String, Boolean)</h4>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_LoadDefinition_System_String_System_Boolean_" data-uid="XFS4IoTServer.PrinterServiceProvider.LoadDefinition(System.String,System.Boolean)">LoadDefinition(string, bool)</h4>
   <div class="markdown level1 summary"><p>Load form or media definition</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool LoadDefinition(string definition, bool overwrite)</code></pre>
+    <pre><code class="lang- hljs">public bool LoadDefinition(string definition, bool overwrite)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -623,12 +702,12 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">definition</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">overwrite</span></td>
         <td></td>
       </tr>
@@ -644,21 +723,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_LoadDefinition_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_LoadSingleDefinition_" data-uid="XFS4IoTServer.PrinterServiceProvider.LoadSingleDefinition*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_LoadSingleDefinition_System_String_System_Boolean_System_Nullable_XFS4IoT_Printer_Events_DefinitionLoadedEvent_PayloadData_TypeEnum___System_String__System_String__" data-uid="XFS4IoTServer.PrinterServiceProvider.LoadSingleDefinition(System.String,System.Boolean,System.Nullable{XFS4IoT.Printer.Events.DefinitionLoadedEvent.PayloadData.TypeEnum}@,System.String@,System.String@)">LoadSingleDefinition(String, Boolean, out Nullable&lt;XFS4IoT.Printer.Events.DefinitionLoadedEvent.PayloadData.TypeEnum&gt;, out String, out String)</h4>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_LoadSingleDefinition_System_String_System_Boolean_System_Nullable_XFS4IoT_Printer_Events_DefinitionLoadedEvent_PayloadData_TypeEnum___System_String__System_String__" data-uid="XFS4IoTServer.PrinterServiceProvider.LoadSingleDefinition(System.String,System.Boolean,System.Nullable{XFS4IoT.Printer.Events.DefinitionLoadedEvent.PayloadData.TypeEnum}@,System.String@,System.String@)">LoadSingleDefinition(string, bool, out TypeEnum?, out string, out string)</h4>
   <div class="markdown level1 summary"><p>Load a single form or media definition</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool LoadSingleDefinition(string definition, bool overwrite, out XFS4IoT.Printer.Events.DefinitionLoadedEvent.PayloadData.TypeEnum? type, out string name, out string errorMsg)</code></pre>
+    <pre><code class="lang- hljs">public bool LoadSingleDefinition(string definition, bool overwrite, out DefinitionLoadedEvent.PayloadData.TypeEnum? type, out string name, out string errorMsg)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -671,27 +755,27 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">definition</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">overwrite</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoT.Printer.Events.DefinitionLoadedEvent.PayloadData.TypeEnum.html">DefinitionLoadedEvent.PayloadData.TypeEnum</a>&gt;</td>
+        <td><a class="xref" href="XFS4IoT.Printer.Events.DefinitionLoadedEvent.html">DefinitionLoadedEvent</a>.<a class="xref" href="XFS4IoT.Printer.Events.DefinitionLoadedEvent.PayloadData.html">PayloadData</a>.<a class="xref" href="XFS4IoT.Printer.Events.DefinitionLoadedEvent.PayloadData.TypeEnum.html">TypeEnum</a>?</td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">errorMsg</span></td>
         <td></td>
       </tr>
@@ -707,20 +791,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_LoadSingleDefinition_System_String_System_Boolean_System_Nullable_XFS4IoT_Printer_Events_DefinitionLoadedEvent_PayloadData_TypeEnum___System_String__System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_MediaAutoRetractedEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaAutoRetractedEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaAutoRetractedEvent_System_Int32_XFS4IoTFramework_Printer_AutoRetractResultEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaAutoRetractedEvent(System.Int32,XFS4IoTFramework.Printer.AutoRetractResultEnum)">MediaAutoRetractedEvent(Int32, AutoRetractResultEnum)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaAutoRetractedEvent_System_Int32_XFS4IoTFramework_Printer_AutoRetractResultEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaAutoRetractedEvent(System.Int32,XFS4IoTFramework.Printer.AutoRetractResultEnum)">MediaAutoRetractedEvent(int, AutoRetractResultEnum)</h4>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task MediaAutoRetractedEvent(int BinNumber, AutoRetractResultEnum AutoRetractResult)</code></pre>
+    <pre><code class="lang- hljs">public Task MediaAutoRetractedEvent(int BinNumber, AutoRetractResultEnum AutoRetractResult)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -733,7 +823,7 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">BinNumber</span></td>
         <td></td>
       </tr>
@@ -754,20 +844,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_MediaAutoRetractedEvent_System_Int32_XFS4IoTFramework_Printer_AutoRetractResultEnum__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_MediaDetectedEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaDetectedEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaDetectedEvent_XFS4IoTFramework_Printer_PositionEnum_System_Nullable_System_Int32__" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaDetectedEvent(XFS4IoTFramework.Printer.PositionEnum,System.Nullable{System.Int32})">MediaDetectedEvent(PositionEnum, Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaDetectedEvent_XFS4IoTFramework_Printer_PositionEnum_System_Nullable_System_Int32__" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaDetectedEvent(XFS4IoTFramework.Printer.PositionEnum,System.Nullable{System.Int32})">MediaDetectedEvent(PositionEnum, int?)</h4>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task MediaDetectedEvent(PositionEnum Position, int? RetractBinNumber = null)</code></pre>
+    <pre><code class="lang- hljs">public Task MediaDetectedEvent(PositionEnum Position, int? RetractBinNumber = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -785,7 +881,7 @@ The printer service stores all printing in this KXPrintJob until the application
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
         <td><span class="parametername">RetractBinNumber</span></td>
         <td></td>
       </tr>
@@ -801,20 +897,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_MediaDetectedEvent_XFS4IoTFramework_Printer_PositionEnum_System_Nullable_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_MediaInsertedUnsolicitedEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaInsertedUnsolicitedEvent*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaInsertedUnsolicitedEvent" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaInsertedUnsolicitedEvent">MediaInsertedUnsolicitedEvent()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task MediaInsertedUnsolicitedEvent()</code></pre>
+    <pre><code class="lang- hljs">public Task MediaInsertedUnsolicitedEvent()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -826,20 +928,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_MediaInsertedUnsolicitedEvent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_MediaPresentedUnsolicitedEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaPresentedUnsolicitedEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaPresentedUnsolicitedEvent_System_Int32_System_Int32_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaPresentedUnsolicitedEvent(System.Int32,System.Int32)">MediaPresentedUnsolicitedEvent(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaPresentedUnsolicitedEvent_System_Int32_System_Int32_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaPresentedUnsolicitedEvent(System.Int32,System.Int32)">MediaPresentedUnsolicitedEvent(int, int)</h4>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task MediaPresentedUnsolicitedEvent(int WadIndex, int TotalWads)</code></pre>
+    <pre><code class="lang- hljs">public Task MediaPresentedUnsolicitedEvent(int WadIndex, int TotalWads)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -852,12 +960,12 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">WadIndex</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">TotalWads</span></td>
         <td></td>
       </tr>
@@ -873,20 +981,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_MediaPresentedUnsolicitedEvent_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_MediaTakenEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaTakenEvent*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_MediaTakenEvent" data-uid="XFS4IoTServer.PrinterServiceProvider.MediaTakenEvent">MediaTakenEvent()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task MediaTakenEvent()</code></pre>
+    <pre><code class="lang- hljs">public Task MediaTakenEvent()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -898,20 +1012,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_MediaTakenEvent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_NonceClearedEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.NonceClearedEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_NonceClearedEvent_System_String_" data-uid="XFS4IoTServer.PrinterServiceProvider.NonceClearedEvent(System.String)">NonceClearedEvent(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_NonceClearedEvent_System_String_" data-uid="XFS4IoTServer.PrinterServiceProvider.NonceClearedEvent(System.String)">NonceClearedEvent(string)</h4>
+  <div class="markdown level1 summary"><p>Nonce cleared event</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task NonceClearedEvent(string ReasonDescription)</code></pre>
+    <pre><code class="lang- hljs">public Task NonceClearedEvent(string ReasonDescription)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -924,7 +1044,7 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">ReasonDescription</span></td>
         <td></td>
       </tr>
@@ -940,20 +1060,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_NonceClearedEvent_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_PaperThresholdEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.PaperThresholdEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_PaperThresholdEvent_XFS4IoTFramework_Printer_CommonThresholdStatusEnum_System_Nullable_XFS4IoTFramework_Printer_PaperSourceEnum__System_String_" data-uid="XFS4IoTServer.PrinterServiceProvider.PaperThresholdEvent(XFS4IoTFramework.Printer.CommonThresholdStatusEnum,System.Nullable{XFS4IoTFramework.Printer.PaperSourceEnum},System.String)">PaperThresholdEvent(CommonThresholdStatusEnum, Nullable&lt;PaperSourceEnum&gt;, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_PaperThresholdEvent_XFS4IoTFramework_Printer_CommonThresholdStatusEnum_System_Nullable_XFS4IoTFramework_Printer_PaperSourceEnum__System_String_" data-uid="XFS4IoTServer.PrinterServiceProvider.PaperThresholdEvent(XFS4IoTFramework.Printer.CommonThresholdStatusEnum,System.Nullable{XFS4IoTFramework.Printer.PaperSourceEnum},System.String)">PaperThresholdEvent(CommonThresholdStatusEnum, PaperSourceEnum?, string)</h4>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task PaperThresholdEvent(CommonThresholdStatusEnum Status, PaperSourceEnum? PaperSource, string CustomSource = null)</code></pre>
+    <pre><code class="lang- hljs">public Task PaperThresholdEvent(CommonThresholdStatusEnum Status, PaperSourceEnum? PaperSource, string CustomSource = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -971,12 +1097,12 @@ The printer service stores all printing in this KXPrintJob until the application
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Printer.PaperSourceEnum.html">PaperSourceEnum</a>&gt;</td>
+        <td><a class="xref" href="XFS4IoTFramework.Printer.PaperSourceEnum.html">PaperSourceEnum</a>?</td>
         <td><span class="parametername">PaperSource</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">CustomSource</span></td>
         <td></td>
       </tr>
@@ -992,21 +1118,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_PaperThresholdEvent_XFS4IoTFramework_Printer_CommonThresholdStatusEnum_System_Nullable_XFS4IoTFramework_Printer_PaperSourceEnum__System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_PrintToBitmap_" data-uid="XFS4IoTServer.PrinterServiceProvider.PrintToBitmap*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_PrintToBitmap_XFS4IoTFramework_Printer_PrintJobClass_System_Int32_System_Boolean_XFS4IoTFramework_Printer_ImageInfo__" data-uid="XFS4IoTServer.PrinterServiceProvider.PrintToBitmap(XFS4IoTFramework.Printer.PrintJobClass,System.Int32,System.Boolean,XFS4IoTFramework.Printer.ImageInfo@)">PrintToBitmap(PrintJobClass, Int32, Boolean, out ImageInfo)</h4>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_PrintToBitmap_XFS4IoTFramework_Printer_PrintJobClass_System_Int32_System_Boolean_XFS4IoTFramework_Printer_ImageInfo__" data-uid="XFS4IoTServer.PrinterServiceProvider.PrintToBitmap(XFS4IoTFramework.Printer.PrintJobClass,System.Int32,System.Boolean,XFS4IoTFramework.Printer.ImageInfo@)">PrintToBitmap(PrintJobClass, int, bool, out ImageInfo)</h4>
   <div class="markdown level1 summary"><p>The method can be called in the device class to convert print job to a single image that can be sent to the printer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool PrintToBitmap(PrintJobClass job, int bitCount, bool UpsideDown, out ImageInfo imageInfo)</code></pre>
+    <pre><code class="lang- hljs">public bool PrintToBitmap(PrintJobClass job, int bitCount, bool UpsideDown, out ImageInfo imageInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1024,13 +1155,13 @@ The printer service stores all printing in this KXPrintJob until the application
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">bitCount</span></td>
         <td><p>Bits per pixel in returned data</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">UpsideDown</span></td>
         <td></td>
       </tr>
@@ -1052,20 +1183,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_PrintToBitmap_XFS4IoTFramework_Printer_PrintJobClass_System_Int32_System_Boolean_XFS4IoTFramework_Printer_ImageInfo___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_RetractBinStatusEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.RetractBinStatusEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_RetractBinStatusEvent_System_Int32_XFS4IoTFramework_Printer_PhysicalBinStatusEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.RetractBinStatusEvent(System.Int32,XFS4IoTFramework.Printer.PhysicalBinStatusEnum)">RetractBinStatusEvent(Int32, PhysicalBinStatusEnum)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_RetractBinStatusEvent_System_Int32_XFS4IoTFramework_Printer_PhysicalBinStatusEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.RetractBinStatusEvent(System.Int32,XFS4IoTFramework.Printer.PhysicalBinStatusEnum)">RetractBinStatusEvent(int, PhysicalBinStatusEnum)</h4>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RetractBinStatusEvent(int BinNumber, PhysicalBinStatusEnum State)</code></pre>
+    <pre><code class="lang- hljs">public Task RetractBinStatusEvent(int BinNumber, PhysicalBinStatusEnum State)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1078,7 +1215,7 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">BinNumber</span></td>
         <td></td>
       </tr>
@@ -1099,20 +1236,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_RetractBinStatusEvent_System_Int32_XFS4IoTFramework_Printer_PhysicalBinStatusEnum__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_RetractBinThresholdEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.RetractBinThresholdEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_RetractBinThresholdEvent_System_Int32_XFS4IoTFramework_Printer_RetractThresholdStatusEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.RetractBinThresholdEvent(System.Int32,XFS4IoTFramework.Printer.RetractThresholdStatusEnum)">RetractBinThresholdEvent(Int32, RetractThresholdStatusEnum)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_RetractBinThresholdEvent_System_Int32_XFS4IoTFramework_Printer_RetractThresholdStatusEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.RetractBinThresholdEvent(System.Int32,XFS4IoTFramework.Printer.RetractThresholdStatusEnum)">RetractBinThresholdEvent(int, RetractThresholdStatusEnum)</h4>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RetractBinThresholdEvent(int BinNumber, RetractThresholdStatusEnum Status)</code></pre>
+    <pre><code class="lang- hljs">public Task RetractBinThresholdEvent(int BinNumber, RetractThresholdStatusEnum Status)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1125,7 +1268,7 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">BinNumber</span></td>
         <td></td>
       </tr>
@@ -1146,20 +1289,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_RetractBinThresholdEvent_System_Int32_XFS4IoTFramework_Printer_RetractThresholdStatusEnum__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_StatusChangedEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.StatusChangedEvent*"></a>
-  <h4 id="XFS4IoTServer_PrinterServiceProvider_StatusChangedEvent_System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_DeviceEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_PositionStatusEnum__System_Nullable_System_Int32__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_AntiFraudModuleEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_ExchangeEnum__System_Nullable_XFS4IoTFramework_Common_CommonStatusClass_EndToEndSecurityEnum__" data-uid="XFS4IoTServer.PrinterServiceProvider.StatusChangedEvent(System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.DeviceEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.PositionStatusEnum},System.Nullable{System.Int32},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.AntiFraudModuleEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.ExchangeEnum},System.Nullable{XFS4IoTFramework.Common.CommonStatusClass.EndToEndSecurityEnum})">StatusChangedEvent(Nullable&lt;CommonStatusClass.DeviceEnum&gt;, Nullable&lt;CommonStatusClass.PositionStatusEnum&gt;, Nullable&lt;Int32&gt;, Nullable&lt;CommonStatusClass.AntiFraudModuleEnum&gt;, Nullable&lt;CommonStatusClass.ExchangeEnum&gt;, Nullable&lt;CommonStatusClass.EndToEndSecurityEnum&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="XFS4IoTServer_PrinterServiceProvider_StatusChangedEvent_System_Object_System_ComponentModel_PropertyChangedEventArgs_" data-uid="XFS4IoTServer.PrinterServiceProvider.StatusChangedEvent(System.Object,System.ComponentModel.PropertyChangedEventArgs)">StatusChangedEvent(object, PropertyChangedEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Sending status changed event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task StatusChangedEvent(CommonStatusClass.DeviceEnum? Device, CommonStatusClass.PositionStatusEnum? Position, int? PowerSaveRecoveryTime, CommonStatusClass.AntiFraudModuleEnum? AntiFraudModule, CommonStatusClass.ExchangeEnum? Exchange, CommonStatusClass.EndToEndSecurityEnum? EndToEndSecurity)</code></pre>
+    <pre><code class="lang- hljs">public Task StatusChangedEvent(object sender, PropertyChangedEventArgs propertyInfo)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1172,33 +1321,13 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.DeviceEnum.html">CommonStatusClass.DeviceEnum</a>&gt;</td>
-        <td><span class="parametername">Device</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">sender</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.PositionStatusEnum.html">CommonStatusClass.PositionStatusEnum</a>&gt;</td>
-        <td><span class="parametername">Position</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td><span class="parametername">PowerSaveRecoveryTime</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.AntiFraudModuleEnum.html">CommonStatusClass.AntiFraudModuleEnum</a>&gt;</td>
-        <td><span class="parametername">AntiFraudModule</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.ExchangeEnum.html">CommonStatusClass.ExchangeEnum</a>&gt;</td>
-        <td><span class="parametername">Exchange</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="XFS4IoTFramework.Common.CommonStatusClass.EndToEndSecurityEnum.html">CommonStatusClass.EndToEndSecurityEnum</a>&gt;</td>
-        <td><span class="parametername">EndToEndSecurity</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs">PropertyChangedEventArgs</a></td>
+        <td><span class="parametername">propertyInfo</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1213,20 +1342,26 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_StatusChangedEvent_System_Object_System_ComponentModel_PropertyChangedEventArgs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
+
+
   <a id="XFS4IoTServer_PrinterServiceProvider_TonerThresholdEvent_" data-uid="XFS4IoTServer.PrinterServiceProvider.TonerThresholdEvent*"></a>
   <h4 id="XFS4IoTServer_PrinterServiceProvider_TonerThresholdEvent_XFS4IoTFramework_Printer_CommonThresholdStatusEnum_" data-uid="XFS4IoTServer.PrinterServiceProvider.TonerThresholdEvent(XFS4IoTFramework.Printer.CommonThresholdStatusEnum)">TonerThresholdEvent(CommonThresholdStatusEnum)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default implimentation of a printer service provider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task TonerThresholdEvent(CommonThresholdStatusEnum Status)</code></pre>
+    <pre><code class="lang- hljs">public Task TonerThresholdEvent(CommonThresholdStatusEnum Status)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1255,11 +1390,16 @@ The printer service stores all printing in this KXPrintJob until the application
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 id="XFS4IoTServer_PrinterServiceProvider_TonerThresholdEvent_XFS4IoTFramework_Printer_CommonThresholdStatusEnum__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This represents a service provider for the printer device.
+It's possible to create other service provider types by combining multiple service classes in the
+same way.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="XFS4IoTServer.IServiceProvider.html">IServiceProvider</a>
@@ -1275,23 +1415,23 @@ The printer service stores all printing in this KXPrintJob until the application
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, Boolean, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, String, String)</a>
-  </div>
-  <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, String, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(object, string, string)</a>
   </div>
   <div>
       <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
   </div>
   <div>
-      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(Object, String, String)</a>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, bool, string)</a>
   </div>
 </article>
           </div>
-          
+
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
               <div class="contribution">
@@ -1306,7 +1446,7 @@ The printer service stores all printing in this KXPrintJob until the application
           </div>
         </div>
       </div>
-      
+
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
@@ -1314,13 +1454,13 @@ The printer service stores all printing in this KXPrintJob until the application
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            
-            <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+      
+      <span>Created by <strong>KAL ATM Software GmbH</strong></span>
           </div>
         </div>
       </footer>
     </div>
-    
+
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
     <script type="text/javascript" src="../styles/main.js"></script>

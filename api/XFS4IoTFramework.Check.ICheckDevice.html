@@ -1,0 +1,871 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ICheckDevice
+ | XFS4IoT-SP-Dev </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ICheckDevice
+ | XFS4IoT-SP-Dev ">
+    <meta name="generator" content="docfx ">
+  
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  
+  <meta property="docfx:rel" content="../">
+  
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+
+              <a class="navbar-brand" href="../index.html">
+              <img id="logo" class="svg" src="https://www.kal.com/images/kal-logo.svg" alt="">
+              </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="XFS4IoTFramework.Check.ICheckDevice">
+
+
+  <h1 id="XFS4IoTFramework_Check_ICheckDevice" data-uid="XFS4IoTFramework.Check.ICheckDevice" class="text-break">Interface ICheckDevice
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="XFS4IoTServer.IDevice.html#XFS4IoTServer_IDevice_RunAsync_System_Threading_CancellationToken_">IDevice.RunAsync(CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="XFS4IoTServer.IDevice.html#XFS4IoTServer_IDevice_SetServiceProvider">IDevice.SetServiceProvider</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="XFS4IoTFramework.html">XFS4IoTFramework</a>.<a class="xref" href="XFS4IoTFramework.Check.html">Check</a></h6>
+  <h6><strong>Assembly</strong>: XFS4IoT.SP.Framework.Check.dll</h6>
+  <h5 id="XFS4IoTFramework_Check_ICheckDevice_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">public interface ICheckDevice : IDevice</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_AcceptItem_" data-uid="XFS4IoTFramework.Check.ICheckDevice.AcceptItem*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_AcceptItem_XFS4IoTFramework_Check_IAcceptItemEvents_XFS4IoT_Check_Commands_AcceptItemCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.AcceptItem(XFS4IoTFramework.Check.IAcceptItemEvents,XFS4IoT.Check.Commands.AcceptItemCommand.PayloadData,System.Threading.CancellationToken)">AcceptItem(IAcceptItemEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used by applications to indicate if the current media item should be accepted or refused. Applications only usethis command when the <a href="#check.mediain">Check.MediaIn</a> command is used in the mode where the application can decide if each physically acceptablemedia item should be accepted or refused, i.e. <a href="#check.mediain.command.description.applicationrefuse">applicationRefuse</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;AcceptItemCompletion.PayloadData&gt; AcceptItem(IAcceptItemEvents events, AcceptItemCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IAcceptItemEvents.html">IAcceptItemEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.AcceptItemCommand.html">AcceptItemCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.AcceptItemCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.AcceptItemCompletion.html">AcceptItemCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.AcceptItemCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_ActionItem_" data-uid="XFS4IoTFramework.Check.ICheckDevice.ActionItem*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_ActionItem_XFS4IoTFramework_Check_IActionItemEvents_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.ActionItem(XFS4IoTFramework.Check.IActionItemEvents,System.Threading.CancellationToken)">ActionItem(IActionItemEvents, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This command is used to cause the predefined actions (move item to destination, stamping, endorsing, re-imaging) to beexecuted on the current media item. This command only applies to devices without stackers and on devices with stackers this command is notsupported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;ActionItemCompletion.PayloadData&gt; ActionItem(IActionItemEvents events, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IActionItemEvents.html">IActionItemEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.ActionItemCompletion.html">ActionItemCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.ActionItemCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_ExpelMedia_" data-uid="XFS4IoTFramework.Check.ICheckDevice.ExpelMedia*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_ExpelMedia_XFS4IoTFramework_Check_IExpelMediaEvents_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.ExpelMedia(XFS4IoTFramework.Check.IExpelMediaEvents,System.Threading.CancellationToken)">ExpelMedia(IExpelMediaEvents, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The media that has been presented to the customer will be expelled out of the device.This command completes after the bunch has been expelled from the device.This command does not end the current media-in transaction. The application must deal with any media remaining within the device, e.g.,by using the <a href="#check.mediainrollback">Check.MediaInRollBack</a>, <a href="#check.mediainend">Check.MediaInEnd</a>, or <a href="#check.retractmedia">Check.RetractMedia</a> command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;ExpelMediaCompletion.PayloadData&gt; ExpelMedia(IExpelMediaEvents events, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IExpelMediaEvents.html">IExpelMediaEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.ExpelMediaCompletion.html">ExpelMediaCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.ExpelMediaCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_GetNextItem_" data-uid="XFS4IoTFramework.Check.ICheckDevice.GetNextItem*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_GetNextItem_XFS4IoTFramework_Check_IGetNextItemEvents_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.GetNextItem(XFS4IoTFramework.Check.IGetNextItemEvents,System.Threading.CancellationToken)">GetNextItem(IGetNextItemEvents, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/GetNextItemDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;GetNextItemCompletion.PayloadData&gt; GetNextItem(IGetNextItemEvents events, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IGetNextItemEvents.html">IGetNextItemEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.GetNextItemCompletion.html">GetNextItemCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.GetNextItemCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_GetTransactionStatus_" data-uid="XFS4IoTFramework.Check.ICheckDevice.GetTransactionStatus*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_GetTransactionStatus_XFS4IoTFramework_Check_IGetTransactionStatusEvents_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.GetTransactionStatus(XFS4IoTFramework.Check.IGetTransactionStatusEvents,System.Threading.CancellationToken)">GetTransactionStatus(IGetTransactionStatusEvents, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/GetTransactionStatusDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;GetTransactionStatusCompletion.PayloadData&gt; GetTransactionStatus(IGetTransactionStatusEvents events, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IGetTransactionStatusEvents.html">IGetTransactionStatusEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.GetTransactionStatusCompletion.html">GetTransactionStatusCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.GetTransactionStatusCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_MediaIn_" data-uid="XFS4IoTFramework.Check.ICheckDevice.MediaIn*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_MediaIn_XFS4IoTFramework_Check_IMediaInEvents_XFS4IoT_Check_Commands_MediaInCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.MediaIn(XFS4IoTFramework.Check.IMediaInEvents,XFS4IoT.Check.Commands.MediaInCommand.PayloadData,System.Threading.CancellationToken)">MediaIn(IMediaInEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/MediaInDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;MediaInCompletion.PayloadData&gt; MediaIn(IMediaInEvents events, MediaInCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IMediaInEvents.html">IMediaInEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.MediaInCommand.html">MediaInCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.MediaInCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.MediaInCompletion.html">MediaInCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.MediaInCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_MediaInEnd_" data-uid="XFS4IoTFramework.Check.ICheckDevice.MediaInEnd*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_MediaInEnd_XFS4IoTFramework_Check_IMediaInEndEvents_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.MediaInEnd(XFS4IoTFramework.Check.IMediaInEndEvents,System.Threading.CancellationToken)">MediaInEnd(IMediaInEndEvents, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/MediaInEndDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;MediaInEndCompletion.PayloadData&gt; MediaInEnd(IMediaInEndEvents events, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IMediaInEndEvents.html">IMediaInEndEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.MediaInEndCompletion.html">MediaInEndCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.MediaInEndCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_MediaInRollback_" data-uid="XFS4IoTFramework.Check.ICheckDevice.MediaInRollback*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_MediaInRollback_XFS4IoTFramework_Check_IMediaInRollbackEvents_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.MediaInRollback(XFS4IoTFramework.Check.IMediaInRollbackEvents,System.Threading.CancellationToken)">MediaInRollback(IMediaInRollbackEvents, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/MediaInRollbackDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;MediaInRollbackCompletion.PayloadData&gt; MediaInRollback(IMediaInRollbackEvents events, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IMediaInRollbackEvents.html">IMediaInRollbackEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.MediaInRollbackCompletion.html">MediaInRollbackCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.MediaInRollbackCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_PresentMedia_" data-uid="XFS4IoTFramework.Check.ICheckDevice.PresentMedia*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_PresentMedia_XFS4IoTFramework_Check_IPresentMediaEvents_XFS4IoT_Check_Commands_PresentMediaCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.PresentMedia(XFS4IoTFramework.Check.IPresentMediaEvents,XFS4IoT.Check.Commands.PresentMediaCommand.PayloadData,System.Threading.CancellationToken)">PresentMedia(IPresentMediaEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/PresentMediaDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;PresentMediaCompletion.PayloadData&gt; PresentMedia(IPresentMediaEvents events, PresentMediaCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IPresentMediaEvents.html">IPresentMediaEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.PresentMediaCommand.html">PresentMediaCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.PresentMediaCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.PresentMediaCompletion.html">PresentMediaCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.PresentMediaCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_ReadImage_" data-uid="XFS4IoTFramework.Check.ICheckDevice.ReadImage*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_ReadImage_XFS4IoTFramework_Check_IReadImageEvents_XFS4IoT_Check_Commands_ReadImageCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.ReadImage(XFS4IoTFramework.Check.IReadImageEvents,XFS4IoT.Check.Commands.ReadImageCommand.PayloadData,System.Threading.CancellationToken)">ReadImage(IReadImageEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/ReadImageDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;ReadImageCompletion.PayloadData&gt; ReadImage(IReadImageEvents events, ReadImageCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IReadImageEvents.html">IReadImageEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.ReadImageCommand.html">ReadImageCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.ReadImageCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.ReadImageCompletion.html">ReadImageCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.ReadImageCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_Reset_" data-uid="XFS4IoTFramework.Check.ICheckDevice.Reset*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_Reset_XFS4IoTFramework_Check_IResetEvents_XFS4IoT_Check_Commands_ResetCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.Reset(XFS4IoTFramework.Check.IResetEvents,XFS4IoT.Check.Commands.ResetCommand.PayloadData,System.Threading.CancellationToken)">Reset(IResetEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/ResetDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;ResetCompletion.PayloadData&gt; Reset(IResetEvents events, ResetCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IResetEvents.html">IResetEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.ResetCommand.html">ResetCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.ResetCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.ResetCompletion.html">ResetCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.ResetCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_RetractMedia_" data-uid="XFS4IoTFramework.Check.ICheckDevice.RetractMedia*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_RetractMedia_XFS4IoTFramework_Check_IRetractMediaEvents_XFS4IoT_Check_Commands_RetractMediaCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.RetractMedia(XFS4IoTFramework.Check.IRetractMediaEvents,XFS4IoT.Check.Commands.RetractMediaCommand.PayloadData,System.Threading.CancellationToken)">RetractMedia(IRetractMediaEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/RetractMediaDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;RetractMediaCompletion.PayloadData&gt; RetractMedia(IRetractMediaEvents events, RetractMediaCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.IRetractMediaEvents.html">IRetractMediaEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.RetractMediaCommand.html">RetractMediaCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.RetractMediaCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.RetractMediaCompletion.html">RetractMediaCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.RetractMediaCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_SetMediaParameters_" data-uid="XFS4IoTFramework.Check.ICheckDevice.SetMediaParameters*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_SetMediaParameters_XFS4IoTFramework_Check_ISetMediaParametersEvents_XFS4IoT_Check_Commands_SetMediaParametersCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.SetMediaParameters(XFS4IoTFramework.Check.ISetMediaParametersEvents,XFS4IoT.Check.Commands.SetMediaParametersCommand.PayloadData,System.Threading.CancellationToken)">SetMediaParameters(ISetMediaParametersEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/SetMediaParametersDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;SetMediaParametersCompletion.PayloadData&gt; SetMediaParameters(ISetMediaParametersEvents events, SetMediaParametersCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.ISetMediaParametersEvents.html">ISetMediaParametersEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.SetMediaParametersCommand.html">SetMediaParametersCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.SetMediaParametersCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.SetMediaParametersCompletion.html">SetMediaParametersCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.SetMediaParametersCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="XFS4IoTFramework_Check_ICheckDevice_SupplyReplenish_" data-uid="XFS4IoTFramework.Check.ICheckDevice.SupplyReplenish*"></a>
+  <h4 id="XFS4IoTFramework_Check_ICheckDevice_SupplyReplenish_XFS4IoTFramework_Check_ISupplyReplenishEvents_XFS4IoT_Check_Commands_SupplyReplenishCommand_PayloadData_System_Threading_CancellationToken_" data-uid="XFS4IoTFramework.Check.ICheckDevice.SupplyReplenish(XFS4IoTFramework.Check.ISupplyReplenishEvents,XFS4IoT.Check.Commands.SupplyReplenishCommand.PayloadData,System.Threading.CancellationToken)">SupplyReplenish(ISupplyReplenishEvents, PayloadData, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>$ref: ../Docs/SupplyReplenishDescription.md</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang- hljs">Task&lt;SupplyReplenishCompletion.PayloadData&gt; SupplyReplenish(ISupplyReplenishEvents events, SupplyReplenishCommand.PayloadData payload, CancellationToken cancellation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="XFS4IoTFramework.Check.ISupplyReplenishEvents.html">ISupplyReplenishEvents</a></td>
+        <td><span class="parametername">events</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="XFS4IoT.Check.Commands.SupplyReplenishCommand.html">SupplyReplenishCommand</a>.<a class="xref" href="XFS4IoT.Check.Commands.SupplyReplenishCommand.PayloadData.html">PayloadData</a></td>
+        <td><span class="parametername">payload</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="XFS4IoT.Check.Completions.SupplyReplenishCompletion.html">SupplyReplenishCompletion</a>.<a class="xref" href="XFS4IoT.Check.Completions.SupplyReplenishCompletion.PayloadData.html">PayloadData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsA__1_System_Object_System_String_System_String_">Contracts.IsA&lt;T&gt;(object, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Ignore__1___0_">Contracts.Ignore&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNotNull__1___0_System_String_System_String_">Contracts.IsNotNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_IsNull__1___0_System_String_System_String_">Contracts.IsNull&lt;T&gt;(T, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="XFS4IoT.Contracts.html#XFS4IoT_Contracts_Is__1___0_System_Boolean_System_String_">Contracts.Is&lt;T&gt;(T, bool, string)</a>
+  </div>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Created by <strong>KAL ATM Software GmbH</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
